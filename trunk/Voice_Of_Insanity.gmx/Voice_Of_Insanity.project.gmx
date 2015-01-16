@@ -5,12 +5,23 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\testWall</sprite>
+    <sprite>sprites\testBall</sprite>
+    <sprite>sprites\testSheild</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\playerClass.gml</script>
   </scripts>
+  <objects name="objects">
+    <object>objects\testWallObj</object>
+    <object>objects\testPlayer</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\testRoom</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
