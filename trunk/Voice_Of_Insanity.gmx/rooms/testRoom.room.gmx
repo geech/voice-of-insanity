@@ -90,7 +90,7 @@
     <instance objName="testWallObj" x="0" y="0" name="inst_4F9568AA" locked="0" code="" scaleX="1.33333337306976" scaleY="30.7199993133545" colour="4294967295" rotation="0"/>
     <instance objName="testWallObj" x="0" y="0" name="inst_41B7B330" locked="0" code="" scaleX="42.6666679382324" scaleY="1.27999997138977" colour="4294967295" rotation="0"/>
     <instance objName="testWallObj" x="992" y="0" name="inst_33520CDF" locked="0" code="" scaleX="1.33333337306976" scaleY="30.7199993133545" colour="4294967295" rotation="0"/>
-    <instance objName="testPlayer" x="256" y="128" name="inst_CCD0CB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="testPlayer" x="448" y="320" name="inst_CCD0CB45" locked="0" code="" scaleX="5.33333349227905" scaleY="5.11999988555908" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="64" y="64" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_0581DF12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -13,6 +13,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\NRMMovement.gml</script>
     <script>scripts\playerClass.gml</script>
   </scripts>
   <objects name="objects">
