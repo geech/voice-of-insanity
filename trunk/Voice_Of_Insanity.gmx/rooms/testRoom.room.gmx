@@ -41,14 +41,14 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="self" x="160" y="96" name="inst_1704D802" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -91,6 +91,16 @@
     <instance objName="testWallObj" x="0" y="0" name="inst_41B7B330" locked="0" code="" scaleX="42.6666679382324" scaleY="1.27999997138977" colour="4294967295" rotation="0"/>
     <instance objName="testWallObj" x="992" y="0" name="inst_33520CDF" locked="0" code="" scaleX="1.33333337306976" scaleY="30.7199993133545" colour="4294967295" rotation="0"/>
     <instance objName="testPlayer" x="448" y="320" name="inst_CCD0CB45" locked="0" code="" scaleX="5.33333349227905" scaleY="5.11999988555908" colour="4294967295" rotation="0"/>
+    <instance objName="testBalll" x="192" y="128" name="inst_8C41B1BA" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="192" y="384" name="inst_EC51F04B" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="448" y="160" name="inst_4E4555A4" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="512" y="640" name="inst_DA35D6FB" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="768" y="512" name="inst_BC0376D6" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="192" y="608" name="inst_8A66656E" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="736" y="256" name="inst_74E273EF" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="672" y="96" name="inst_98A85A83" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="512" y="448" name="inst_622CD41E" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="testSwitch_off" x="96" y="224" name="inst_81C30AC7" locked="0" code="" scaleX="8" scaleY="8" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="64" y="64" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_0581DF12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
