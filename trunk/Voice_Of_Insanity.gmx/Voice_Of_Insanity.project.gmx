@@ -12,17 +12,21 @@
     <sprite>sprites\testSheild</sprite>
     <sprite>sprites\testSwitch_true</sprite>
     <sprite>sprites\testShield</sprite>
+    <sprite>sprites\placeholder_POXEL</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\playerClass.gml</script>
+    <script>scripts\checkHP.gml</script>
+    <script>scripts\roomScore.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\testWallObj</object>
     <object>objects\testPlayer</object>
     <object>objects\testBalll</object>
     <object>objects\testSwitch_off</object>
+    <object>objects\testChar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testRoom</room>

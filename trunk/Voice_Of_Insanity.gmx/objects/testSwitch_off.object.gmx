@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>enabled = false;
+testChar.rmax += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="testBalll">
       <action>
         <libid>1</libid>
@@ -36,14 +60,27 @@
 
 // Using the object's appearance acts as a consistant variable
 // thank fucking god
-if (sprite_index == testSwitch_false){
+
+// update on notes above:
+// variables are defined with a script on creation
+// yay im dumb
+
+// SWITCH OFF
+if (enabled == false){
+enabled = true;
 sprite_index = testSwitch_true;
+rscore += 1;
 }
 else
 {
+enabled = false;
 sprite_index = testSwitch_false;
+rscore -= 1;
 }
 
+if(rscore &gt;= rmax) {
+show_debug_message('ROOM IS DONE');
+}
 /*if (active == true){
 sprite_index = testSwitch_false;
 active = false;

@@ -8,6 +8,37 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Set starting pos
+
+char = testChar;
+loc = 0;
+dist = 50;
+image_angle = 270;
+
+movespd = 3;
+rotatespd = 3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,26 +56,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Is this how we work with movement?
-spd = 8
+            <string>// NOTE:
+// Y++ = down
+// X++ = right
+
+// Starting POS for paddle:
+x = (char.x + 3) + lengthdir_x(dist, loc);
+y = (char.y + 1) + lengthdir_y(dist, loc);
 
 
-if keyboard_check(vk_left){ 
-x -= spd
+// Rotation for paddle:
+if keyboard_check(ord('A')) {
+loc += movespd;
+image_angle += rotatespd;
 }
 
-if keyboard_check(vk_right){ 
-x += spd
-}
-
-
-
-if keyboard_check(vk_up){
- y -= spd
-}
-
-if keyboard_check(vk_down){ 
-y += spd
+if keyboard_check(ord('D')) {
+loc -= movespd;
+image_angle -= rotatespd;
 }
 
 </string>
@@ -77,6 +106,30 @@ y += spd
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
+        <codestring></codestring>
+        <whoName>testChar</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>000010000</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="testWallObj">
       <action>
@@ -90,6 +143,30 @@ y += spd
         <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>000010000</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
+        <codestring></codestring>
+        <whoName>testChar</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
