@@ -32,8 +32,8 @@ loc = 0;
 dist = 50;
 image_angle = 270;
 
-movespd = 3;
-rotatespd = 3;
+movespd = 4;
+rotatespd = 4;
 </string>
           </argument>
         </arguments>
