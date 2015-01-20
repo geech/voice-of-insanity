@@ -57,6 +57,27 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>rt_spd = 5;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -115,23 +136,45 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
-if (keyboard_check(ord("W")))
+            <string>//image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
+
+
+
+if (keyboard_check(ord("W"))) or (keyboard_check(ord("S"))) {
+direction = 90;
+}
+if (keyboard_check(ord("A"))) or (keyboard_check(ord("D"))) {
+direction = 180;
+}
+
+
+if (keyboard_check(ord("W"))) or (keyboard_check(ord("A")))
 {
     if (speed &lt;6)
     {
         speed += 0.5;
     }
-    direction = image_angle +90;
+    //direction = image_angle +90;
 }
 
-if (keyboard_check(ord("S")))
+
+if (keyboard_check(ord("S"))) or (keyboard_check(ord("D")))
 {
     if (speed &gt; -5)
     {
         speed -= 0.5;
     }
-   
+
+}
+
+if (keyboard_check(ord("Q")))
+{
+image_angle += rt_spd;
+}
+
+if (keyboard_check(ord("E")))
+{
+image_angle -= rt_spd;
 }
 
 else
@@ -140,10 +183,13 @@ else
     {
         speed -= 0.25;
     } 
+    else if (speed &lt; 0) {
+        speed += 0.25;
+    }
     else
     {
     
-        speed += 0.25;
+        speed += 0;
     }
 }
 
