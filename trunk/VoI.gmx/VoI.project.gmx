@@ -15,6 +15,7 @@
     <sprite>sprites\spr_nasties</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_contr</sprite>
+    <sprite>sprites\spr_floorNasties</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -26,15 +27,21 @@
     <object>objects\obj_s1</object>
     <object>objects\obj_sOff1</object>
     <object>objects\obj_sOff2</object>
+    <object>objects\obj_sOff3</object>
     <object>objects\obj_s2</object>
     <object>objects\obj_s3</object>
+    <object>objects\obj_s4</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_fakeWall1</object>
     <object>objects\obj_fakeWall2</object>
+    <object>objects\obj_fakeWall3</object>
     <object>objects\obj_controller</object>
     <object>objects\obj_sensor1</object>
+    <object>objects\obj_sensor2</object>
+    <object>objects\obj_sensor3</object>
     <object>objects\obj_nasties</object>
     <object>objects\obj_sOn</object>
+    <object>objects\obj_floorNasties</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\MainRoom</room>

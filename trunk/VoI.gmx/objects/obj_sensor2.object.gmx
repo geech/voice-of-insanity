@@ -29,11 +29,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>64</string>
+            <string>704</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>256</string>
+            <string>224</string>
           </argument>
         </arguments>
       </action>
