@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
+    <sprite>sprites\spr_wallBreak</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\spr_switchOff</sprite>
@@ -20,15 +21,20 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_wallBreak</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_s1</object>
+    <object>objects\obj_sOff1</object>
+    <object>objects\obj_sOff2</object>
     <object>objects\obj_s2</object>
     <object>objects\obj_s3</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_fakeWall1</object>
+    <object>objects\obj_fakeWall2</object>
     <object>objects\obj_controller</object>
-    <object>objects\obj_sensor</object>
+    <object>objects\obj_sensor1</object>
     <object>objects\obj_nasties</object>
+    <object>objects\obj_sOn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\MainRoom</room>
