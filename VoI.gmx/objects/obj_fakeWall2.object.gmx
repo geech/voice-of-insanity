@@ -21,6 +21,6 @@
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
     <point>0,0</point>
-    <point>17,17</point>
+    <point>34,34</point>
   </PhysicsShapePoints>
 </object>
