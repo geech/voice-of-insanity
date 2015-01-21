@@ -39,26 +39,6 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>721</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -73,7 +53,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rt_spd = 5;
+            <string>floor_damage = false; // So player doesn't blowup upon touching the floor
+rt_spd = 5;
+
+health = 5;
 </string>
           </argument>
         </arguments>
@@ -139,16 +122,19 @@
             <string>//image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
 
 
+// Base directions
+if (keyboard_check(ord("D"))) { direction = 0; }
+if (keyboard_check(ord("W")))  { direction = 90;}
+if (keyboard_check(ord("A"))) { direction = 180; }
+if (keyboard_check(ord("S"))) { direction = 270; }
 
-if (keyboard_check(ord("W"))) or (keyboard_check(ord("S"))) {
-direction = 90;
-}
-if (keyboard_check(ord("A"))) or (keyboard_check(ord("D"))) {
-direction = 180;
-}
+// 8 way changes
+if (keyboard_check(ord("W"))) and (keyboard_check(ord("D"))) { direction = 45;}
+if (keyboard_check(ord("W"))) and (keyboard_check(ord("A"))) { direction = 135;}
+if (keyboard_check(ord("S"))) and (keyboard_check(ord("A"))) { direction = 225; }
+if (keyboard_check(ord("S"))) and (keyboard_check(ord("D"))) { direction = 315; }
 
-
-if (keyboard_check(ord("W"))) or (keyboard_check(ord("A")))
+if (keyboard_check(ord("W"))) or (keyboard_check(ord("A"))) or (keyboard_check(ord("S"))) or (keyboard_check(ord("D")))
 {
     if (speed &lt;6)
     {
@@ -157,22 +143,22 @@ if (keyboard_check(ord("W"))) or (keyboard_check(ord("A")))
     //direction = image_angle +90;
 }
 
-
-if (keyboard_check(ord("S"))) or (keyboard_check(ord("D")))
+/* // Removal of neg. speeds
+if 
 {
     if (speed &gt; -5)
     {
         speed -= 0.5;
     }
 
-}
+}*/
 
-if (keyboard_check(ord("Q")))
+if (keyboard_check(ord("Q"))) or (keyboard_check(vk_left))
 {
 image_angle += rt_spd;
 }
 
-if (keyboard_check(ord("E")))
+if (keyboard_check(ord("E"))) or (keyboard_check(vk_right))
 {
 image_angle -= rt_spd;
 }
@@ -184,7 +170,7 @@ else
         speed -= 0.25;
     } 
     else if (speed &lt; 0) {
-        speed += 0.25;
+        speed += 0.5;
     }
     else
     {
@@ -196,6 +182,57 @@ else
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+
+if obj_player.health &lt;= 0 { 
+show_debug_message("RIP Player")
+room_restart(); }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_floorNasties">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+// Pushes player back 
+speed = -6
+obj_player.health -= .5; // seems to hit twice, lazy fix will change later
 </string>
           </argument>
         </arguments>
@@ -228,6 +265,98 @@ else
       </action>
     </event>
     <event eventtype="4" ename="obj_fakeWall1">
+      <action>
+        <libid>1</libid>
+        <id>103</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_hspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>104</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_vspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_ball">
+      <action>
+        <libid>1</libid>
+        <id>109</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move_to</functionname>
+        <codestring></codestring>
+        <whoName>obj_ball</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>obj_ball.xpos</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>obj_ball.ypos</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
+        <codestring></codestring>
+        <whoName>obj_ball</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>110100111</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>6</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wallBreak">
       <action>
         <libid>1</libid>
         <id>103</id>

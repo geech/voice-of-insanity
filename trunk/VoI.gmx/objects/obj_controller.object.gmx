@@ -399,7 +399,7 @@ maxHp = playerHealth;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>210</string>
+            <string>270</string>
           </argument>
         </arguments>
       </action>
