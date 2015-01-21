@@ -33,6 +33,32 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// SET THESE VALUES WITH EACH ROOM
+
+
+// Ball reset point (for player taking damage)
+xpos = 191;
+ypos = 613;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_sOn">
       <action>
@@ -82,6 +108,29 @@
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_player.health -= 1;
+
+show_debug_message("Damage due to broken wall");
+</string>
           </argument>
         </arguments>
       </action>
@@ -337,7 +386,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_ball.x &lt;= obj_shield.x-1)
+            <string>/*if (obj_ball.x &lt;= obj_shield.x-1)
 {
     //obj_ball.hspeed -= 1;
     obj_ball.direction = obj_player.direction- (5*obj_ball.hspeed);
@@ -354,8 +403,32 @@ if (obj_ball.x &gt;= obj_shield.x+1)
     obj_ball.direction = obj_player.direction+ (5*obj_ball.hspeed);
     //obj_ball.hspeed += 1;
 }
-
+*/
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -382,6 +455,31 @@ if (obj_ball.x &gt;= obj_shield.x+1)
           <argument>
             <kind>4</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_player.health -= 1;
+
+
+</string>
           </argument>
         </arguments>
       </action>
