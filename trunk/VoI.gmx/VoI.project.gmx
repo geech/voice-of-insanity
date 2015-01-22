@@ -4,7 +4,13 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="SFX">
+      <sound>sound\orbHit_M</sound>
+      <sound>sound\orbHit_L</sound>
+      <sound>sound\orbHit_H</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
     <sprite>sprites\spr_wallBreak</sprite>
