@@ -10,6 +10,7 @@
       <sound>sound\orbHit_L</sound>
       <sound>sound\orbHit_H</sound>
     </sounds>
+    <sound>sound\floor1Song</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
