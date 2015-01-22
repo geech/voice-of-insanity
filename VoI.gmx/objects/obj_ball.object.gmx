@@ -51,7 +51,7 @@
             <kind>1</kind>
             <string>// SET THESE VALUES WITH EACH ROOM
 
-
+clock = 100;
 // Ball reset point (for player taking damage)
 xpos = 191;
 ypos = 613;
@@ -432,6 +432,93 @@ if (obj_ball.x &gt;= obj_shield.x+1)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>obj_player</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Just going to leave this on channel 10 until I know any better.
+show_debug_message(obj_shield.image_angle);
+
+// Orb hits while playing is facing upward
+if (obj_shield.image_angle &gt;= 0) and (obj_shield.image_angle &lt;= 90)
+or (obj_shield.image_angle &lt;= 360) and (obj_shield.image_angle &gt;= 270) {
+audio_play_sound(orbHit_H, 1, false);
+//show_debug_message("THIS HAPPENED");
+}
+
+// Cutting out the middle hit for now
+// will be brought back later
+/*
+// Orb hits while facing is facing sides (May tweak these later)
+else if (obj_shield.image_angle &lt; 200) and (obj_shield.image_angle &gt; 160)
+or (obj_shield.image_angle &gt; 340) and (obj_shield.image_angle &lt; 20) {
+audio_play_sound(orbHit_M, 1, false);
+show_debug_message("THIS HAPPENED");
+}
+*/
+// Orb hits while playing is facing downward
+else if (obj_shield.image_angle &lt;= 180) and (obj_shield.image_angle &gt;= 90)
+or (obj_shield.image_angle &gt;= 180) and (obj_shield.image_angle &lt;= 270) {
+audio_play_sound(orbHit_L, 1, false);
+show_debug_message("THIS HAPPENED");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// What this is: 
+// &gt;&gt; Players cannot take damage after the ball comes in contact with the shield
+
+// Why?
+// &gt;&gt; Helps prevent the glitch of the ball clipping through the shield before reflecting
+// This was entirely annoying as it was more likely for the player to die from this glitch
+// rather than dying from the actual harmful effects of the game
+
+
+// This, along with the pause in player movement while hitting the ball should be a fix
+
+obj_player.immune = true;
+
+while (clock != 0) {
+clock -= 1;
+show_debug_message("Player is immune");
+}
+obj_player.immune = false;
+clock = 100;
+show_debug_message("Player is no longer immune")
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_wall">
       <action>
@@ -476,7 +563,8 @@ if (obj_ball.x &gt;= obj_shield.x+1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_player.health -= 1;
+            <string>if (obj_player.immune = false){
+obj_player.health -= 1;}
 
 
 </string>
