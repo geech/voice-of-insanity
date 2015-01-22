@@ -53,10 +53,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>floor_damage = false; // So player doesn't blowup upon touching the floor
+            <string>//floor_damage = false; // So player doesn't blowup upon touching the floor
 rt_spd = 5;
 
 health = 5;
+draw_text(30, 30, "test")
 </string>
           </argument>
         </arguments>
