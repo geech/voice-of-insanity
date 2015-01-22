@@ -4,15 +4,6 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-<<<<<<< .mine
-  <sounds name="sound">
-    <sound>sound\ball_hit1</sound>
-    <sound>sound\ball_hit2</sound>
-    <sound>sound\ball_hit3</sound>
-    <sound>sound\song1</sound>
-    <sound>sound\scream</sound>
-  </sounds>
-=======
   <sounds name="sound">
     <sounds name="SFX">
       <sound>sound\orbHit_M</sound>
@@ -20,7 +11,6 @@
       <sound>sound\orbHit_H</sound>
     </sounds>
   </sounds>
->>>>>>> .r19
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
     <sprite>sprites\spr_wallBreak</sprite>
