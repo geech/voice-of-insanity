@@ -1,5 +1,4 @@
-//<<<<<<< .mine
-instance_create(825, 0, testboxGUI);//=======
+global.roomNM = "";
 instance_create(825, 0, testboxGUI);
 instance_create(825, 0, health_handler);
-//>>>>>>> .r25
+instance_create(825, 0, roomName);
