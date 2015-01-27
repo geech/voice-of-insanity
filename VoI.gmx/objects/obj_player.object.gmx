@@ -58,48 +58,8 @@ rt_spd = 5;
 immune = false;
 
 health = 5;
-draw_text(30, 30, "test")
+maxhp = health;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>drawGUI</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -164,7 +124,6 @@ draw_text(30, 30, "test")
             <string>//image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
 
 //show_debug_message(obj_player.immune);
-
 // Keep the player within a 360 angle to easily measure image_angle
 if (image_angle &gt; 360) { image_angle -= 360 }
 if (image_angle &lt; 0) { image_angle += 360 }
@@ -279,8 +238,12 @@ room_restart(); }
             <kind>1</kind>
             <string>
 // Pushes player back 
-speed = -6
-obj_player.health -= .5; // seems to hit twice, lazy fix will change later
+ // seems to hit twice, lazy fix will change later
+ 
+ 
+speed = -6;
+obj_player.health -= .5;
+
 </string>
           </argument>
         </arguments>
