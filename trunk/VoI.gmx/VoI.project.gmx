@@ -47,9 +47,13 @@
     <object>objects\obj_s4</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_fakeWall1</object>
-    <object>objects\obj_fakeWall2</object>
+    <object>objects\obj_movingWall</object>
     <object>objects\obj_fakeWall3</object>
-    <object>objects\obj_controller</object>
+    <object>objects\obj_black</object>
+    <object>objects\obj_room1Ctrl</object>
+    <object>objects\obj_room2Ctrl</object>
+    <object>objects\obj_romm3Ctrl</object>
+    <object>objects\obj_room4Ctrl</object>
     <object>objects\obj_sensor1</object>
     <object>objects\obj_sensor2</object>
     <object>objects\obj_sensor3</object>
@@ -63,6 +67,11 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
+    <room>rooms\room3</room>
+    <room>rooms\room4</room>
+    <room>rooms\room5</room>
+    <room>rooms\room6</room>
     <room>rooms\MainRoom</room>
   </rooms>
   <help>
