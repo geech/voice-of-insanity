@@ -54,7 +54,7 @@
     <instance objName="obj_fakeWall1" x="64" y="384" name="inst_0B07FA19" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_s2" x="928" y="320" name="inst_08822469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ball" x="192" y="512" name="inst_4881EC64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="64" y="704" name="inst_492834F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room4Ctrl" x="64" y="704" name="inst_492834F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_s1" x="736" y="320" name="inst_C3E1BBBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="224" y="672" name="inst_13811B06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="416" name="inst_94A224CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -151,7 +151,7 @@
     <instance objName="obj_wallBreak" x="160" y="0" name="inst_1FF83D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wallBreak" x="128" y="0" name="inst_AE66486D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wallBreak" x="96" y="0" name="inst_DE21DC79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fakeWall2" x="480" y="64" name="inst_7164FEC4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_movingWall" x="480" y="64" name="inst_7164FEC4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_sOff2" x="116" y="206" name="inst_7532C89E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sOff2" x="159" y="283" name="inst_E8787E4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nasties" x="0" y="576" name="inst_67A31A63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
