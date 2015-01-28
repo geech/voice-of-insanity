@@ -242,7 +242,7 @@ room_restart(); }
  
  
 speed = -6;
-obj_player.health -= .5;
+health -= global.floor_dmg;
 
 </string>
           </argument>

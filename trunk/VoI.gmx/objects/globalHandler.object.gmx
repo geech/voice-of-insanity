@@ -3,54 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100</depth>
-  <persistent>0</persistent>
+  <depth>0</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>723</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>840</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>500</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>515</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -67,7 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_healthbar(840, 500, 1000, 515, (health/global.maxhp) * 100, c_black, c_red, c_lime, 0, true, true)
+            <string>// Health
+globalvar maxhp;
+
+health = 5
+global.maxhp = health;
+
+
+// Damage Values
+globalvar ball_to_player_dmg;
+globalvar floor_dmg;
+globalvar broken_wall_dmg;
+globalvar wall_hp;
+
+// Ball Properties
+globalvar ball_spd;
+
+// -&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+
+// Ball Properties
+global.ball_spd = 6;
+
+// Damage Values
+global.ball_to_player_dmg = 1;
+global.floor_dmg = .5;
+global.broken_wall_dmg = 1;
+global.wall_hp = 2;
 </string>
           </argument>
         </arguments>
