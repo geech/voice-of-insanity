@@ -48,7 +48,7 @@
         <functionname>action_move_point</functionname>
         <codestring></codestring>
         <whoName>obj_ball</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
@@ -61,7 +61,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>6</string>
+            <string>global.ball_spd</string>
           </argument>
         </arguments>
       </action>

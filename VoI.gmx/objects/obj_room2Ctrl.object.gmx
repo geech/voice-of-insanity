@@ -25,12 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar playerHealth;
- playerHealth = 4;
-globalvar maxHp;
-maxHp = playerHealth;
-
-
+            <string>health = global.maxhp;
 </string>
           </argument>
         </arguments>

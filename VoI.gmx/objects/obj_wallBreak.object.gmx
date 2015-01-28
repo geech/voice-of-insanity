@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// Changing this around. 
 
-hits = 1;
+hits = global.wall_hp;
 </string>
           </argument>
         </arguments>

@@ -64,6 +64,7 @@
       <object>objects\testboxGUI</object>
       <object>objects\health_handler</object>
       <object>objects\roomName</object>
+      <object>objects\globalHandler</object>
     </objects>
   </objects>
   <rooms name="rooms">

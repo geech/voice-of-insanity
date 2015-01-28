@@ -46,7 +46,7 @@ ypos = 613;
         <functionname>action_move_point</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>0</relative>
+        <relative>-1</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
@@ -59,7 +59,7 @@ ypos = 613;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>6</string>
+            <string>global.ball_spd</string>
           </argument>
         </arguments>
       </action>
@@ -131,9 +131,9 @@ ypos = 613;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_player.health -= 1;
+            <string>obj_player.health -= global.broken_wall_dmg;
 
-show_debug_message("Damage due to broken wall");
+//show_debug_message("Damage due to broken wall");
 </string>
           </argument>
         </arguments>
@@ -513,11 +513,11 @@ obj_player.immune = true;
 
 while (clock != 0) {
 clock -= 1;
-show_debug_message("Player is immune");
+//show_debug_message("Player is immune");
 }
 obj_player.immune = false;
 clock = 100;
-show_debug_message("Player is no longer immune")
+//show_debug_message("Player is no longer immune")
 
 </string>
           </argument>
@@ -567,8 +567,10 @@ show_debug_message("Player is no longer immune")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_player.immune = false){
-obj_player.health -= 1;}
+            <string>if (obj_player.immune == false)
+{
+health -= global.ball_to_player_dmg;
+}
 
 
 </string>
