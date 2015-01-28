@@ -26,6 +26,7 @@
     <sprites name="TestGUI">
       <sprite>sprites\boxGUI</sprite>
     </sprites>
+    <sprite>sprites\spr_crate</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
