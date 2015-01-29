@@ -50,7 +50,7 @@ global.ball_spd = 6;
 global.ball_to_player_dmg = 1;
 global.floor_dmg = .5;
 global.broken_wall_dmg = 1;
-global.wall_hp = 2;
+global.wall_hp = 1;
 </string>
           </argument>
         </arguments>

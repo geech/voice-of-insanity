@@ -227,49 +227,107 @@ room_restart(); }
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_doorH">
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>104</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_vspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_floorNasties">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>obj_soundCtrl</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>play</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>213</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_playerDam2</sound>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_playerDam2</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -291,8 +349,8 @@ room_restart(); }
  // seems to hit twice, lazy fix will change later
  
  
-speed = -6;
-health -= global.floor_dmg;
+speed = -2;
+health -= global.floor_dmg/30;
 
 </string>
           </argument>
@@ -318,48 +376,6 @@ health -= global.floor_dmg;
             <kind>1</kind>
             <string>000010000</string>
           </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_doorV">
-      <action>
-        <libid>1</libid>
-        <id>103</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>104</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_vspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
           <argument>
             <kind>0</kind>
             <string>0</string>
@@ -463,6 +479,90 @@ health -= global.floor_dmg;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_doorV">
+      <action>
+        <libid>1</libid>
+        <id>103</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_hspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>104</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_vspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_doorH">
+      <action>
+        <libid>1</libid>
+        <id>103</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_hspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>104</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_vspeed</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_wallBreak">

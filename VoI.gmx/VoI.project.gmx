@@ -11,6 +11,19 @@
       <sound>sound\orbHit_H</sound>
     </sounds>
     <sound>sound\floor1Song</sound>
+    <sound>sound\snd_ballHit1</sound>
+    <sound>sound\snd_ballHit2</sound>
+    <sound>sound\snd_ballHit4</sound>
+    <sound>sound\snd_ballHit3</sound>
+    <sound>sound\snd_ballHit5</sound>
+    <sound>sound\snd_brickB1</sound>
+    <sound>sound\snd_DoorOpen</sound>
+    <sound>sound\snd_powerUp</sound>
+    <sound>sound\snd_floor1_2</sound>
+    <sound>sound\snd_brickB</sound>
+    <sound>sound\snd_playerDam1</sound>
+    <sound>sound\snd_playerDam2</sound>
+    <sound>sound\snd_playerDam3</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
