@@ -15,17 +15,17 @@
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
     <sprite>sprites\spr_wallBreak</sprite>
-    <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_shield</sprite>
+    <sprite>sprites\spr_player_stand</sprite>
+    <sprite>sprites\spr_player_walk</sprite>
+    <sprite>sprites\spr_shield_stand</sprite>
+    <sprite>sprites\spr_shield_walk</sprite>
     <sprite>sprites\spr_switchOff</sprite>
     <sprite>sprites\spr_switchOn</sprite>
     <sprite>sprites\spr_nasties</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_contr</sprite>
     <sprite>sprites\spr_floorNasties</sprite>
-    <sprites name="TestGUI">
-      <sprite>sprites\boxGUI</sprite>
-    </sprites>
+    <sprite>sprites\boxGUI</sprite>
     <sprite>sprites\spr_crate</sprite>
   </sprites>
   <backgrounds name="background"/>
