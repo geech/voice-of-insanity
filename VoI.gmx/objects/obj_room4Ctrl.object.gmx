@@ -108,7 +108,7 @@
         <exetype>1</exetype>
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
-        <whoName>obj_fakeWall1</whoName>
+        <whoName>obj_doorV</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
