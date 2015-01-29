@@ -27,6 +27,12 @@
     <sprite>sprites\spr_floorNasties</sprite>
     <sprite>sprites\boxGUI</sprite>
     <sprite>sprites\spr_crate</sprite>
+    <sprite>sprites\spr_sound</sprite>
+    <sprite>sprites\spr_floor1</sprite>
+    <sprite>sprites\spr_doorVclosed</sprite>
+    <sprite>sprites\spr_doorVopen</sprite>
+    <sprite>sprites\spr_doorHclosed</sprite>
+    <sprite>sprites\spr_doorHopen</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -42,13 +48,16 @@
     <object>objects\obj_sOff1</object>
     <object>objects\obj_slowBall</object>
     <object>objects\obj_soundCtrl</object>
+    <object>objects\obj_doorH</object>
+    <object>objects\obj_doorV</object>
+    <object>objects\obj_doorOpenV</object>
+    <object>objects\obj_doorOpenH</object>
     <object>objects\obj_s2</object>
     <object>objects\obj_s3</object>
     <object>objects\obj_s4</object>
     <object>objects\obj_ball</object>
-    <object>objects\obj_fakeWall1</object>
     <object>objects\obj_movingWall</object>
-    <object>objects\obj_fakeWall3</object>
+    <object>objects\obj_floorT1</object>
     <object>objects\obj_black</object>
     <object>objects\obj_room1Ctrl</object>
     <object>objects\obj_room2Ctrl</object>
