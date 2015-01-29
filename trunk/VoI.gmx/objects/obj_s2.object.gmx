@@ -278,7 +278,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj3.sprite_index = spr_switchOff;
+            <string>obj_s3.sprite_index = spr_switchOff;
 </string>
           </argument>
         </arguments>

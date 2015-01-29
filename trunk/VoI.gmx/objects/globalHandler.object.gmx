@@ -40,11 +40,13 @@ globalvar wall_hp;
 
 // Ball Properties
 globalvar ball_spd;
+globalvar ball_dist;
 
 // -&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
 
 // Ball Properties
 global.ball_spd = 6;
+global.ball_dist = 300;
 
 // Damage Values
 global.ball_to_player_dmg = 1;
