@@ -349,8 +349,8 @@ room_restart(); }
  // seems to hit twice, lazy fix will change later
  
  
-speed = -2;
-health -= global.floor_dmg/30;
+//speed = -2;
+health -= global.floor_dmg/45;
 
 </string>
           </argument>
