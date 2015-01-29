@@ -85,12 +85,12 @@
     <object>objects\obj_floorT1</object>
     <object>objects\obj_black</object>
     <object>objects\obj_room1Ctrl</object>
+    <object>objects\obj_sensor3</object>
     <object>objects\obj_room2Ctrl</object>
     <object>objects\obj_romm3Ctrl</object>
     <object>objects\obj_room4Ctrl</object>
     <object>objects\obj_sensor1</object>
     <object>objects\obj_sensor2</object>
-    <object>objects\obj_sensor3</object>
     <object>objects\obj_nasties</object>
     <object>objects\obj_sOn</object>
     <object>objects\obj_floorNasties</object>
