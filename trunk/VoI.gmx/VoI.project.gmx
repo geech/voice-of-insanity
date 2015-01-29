@@ -24,6 +24,7 @@
     <sound>sound\snd_playerDam1</sound>
     <sound>sound\snd_playerDam2</sound>
     <sound>sound\snd_playerDam3</sound>
+    <sound>sound\snd_lava</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\e</sprite>
@@ -46,19 +47,28 @@
     <sprite>sprites\spr_doorVopen</sprite>
     <sprite>sprites\spr_doorHclosed</sprite>
     <sprite>sprites\spr_doorHopen</sprite>
+    <sprite>sprites\spr_monster</sprite>
+    <sprite>sprites\spr_arrowWall</sprite>
+    <sprite>sprites\spr_arrow</sprite>
+    <sprite>sprites\spr_pressureP</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\drawGUI.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_monster</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_arrowWall</object>
     <object>objects\obj_wallBreak</object>
     <object>objects\obj_shield</object>
+    <object>objects\obj_arrow</object>
     <object>objects\obj_s1</object>
     <object>objects\obj_sOff1</object>
     <object>objects\obj_slowBall</object>
@@ -90,6 +100,7 @@
       <object>objects\roomName</object>
       <object>objects\globalHandler</object>
     </objects>
+    <object>objects\obj_pressureP</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
