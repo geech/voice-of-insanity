@@ -51,6 +51,7 @@
     <sprite>sprites\spr_arrowWall</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_pressureP</sprite>
+    <sprite>sprites\spr_switchN</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
