@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_transformed(840, 40, global.roomNM, 1, 1, image_angle);
+            <string>draw_set_color(c_white);
+draw_text_transformed(840, 480, global.roomNM, 1, 1, image_angle);
 </string>
           </argument>
         </arguments>
