@@ -102,6 +102,7 @@
       <object>objects\globalHandler</object>
     </objects>
     <object>objects\obj_pressureP</object>
+    <object>objects\obj_soulConnect</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
