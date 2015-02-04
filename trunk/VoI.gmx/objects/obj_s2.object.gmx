@@ -164,6 +164,8 @@
           <argument>
             <kind>1</kind>
             <string>obj_s3.sprite_index = spr_switchN;
+effect_create_above(ef_flare, obj_s3.x, obj_s3.y, 1, c_yellow);
+effect_create_above(ef_flare, x, y, 1, c_aqua);
 </string>
           </argument>
         </arguments>
@@ -259,6 +261,27 @@
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_flare, x, y, 1, c_yellow);
+</string>
           </argument>
         </arguments>
       </action>

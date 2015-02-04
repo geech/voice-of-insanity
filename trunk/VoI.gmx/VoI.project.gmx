@@ -52,9 +52,15 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_pressureP</sprite>
     <sprite>sprites\spr_switchN</sprite>
+    <sprite>sprites\spr_floor2</sprite>
+    <sprite>sprites\spr_floor3</sprite>
+    <sprite>sprites\spr_floor4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
