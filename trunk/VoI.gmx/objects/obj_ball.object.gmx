@@ -1896,6 +1896,7 @@ clock = 130;
             <string>if (obj_player.immune == false)
 {
 health -= global.ball_to_player_dmg;
+effect_create_above(ef_spark, obj_player.x, obj_player.y, 2, c_white);
 }
 
 
