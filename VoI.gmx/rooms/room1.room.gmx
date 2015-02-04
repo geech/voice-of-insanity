@@ -9,7 +9,7 @@
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>script_execute(drawGUI);
 global.roomNM = "Room 1";</code>
   <enableViews>-1</enableViews>
