@@ -41,6 +41,7 @@ globalvar wall_hp;
 // Ball Properties
 globalvar ball_spd;
 globalvar ball_dist;
+globalvar ball_alive;
 
 // -&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
 
