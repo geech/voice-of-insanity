@@ -55,6 +55,7 @@
     <sprite>sprites\spr_floor2</sprite>
     <sprite>sprites\spr_floor3</sprite>
     <sprite>sprites\spr_floor4</sprite>
+    <sprite>sprites\spr_shieldHP</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -106,6 +107,7 @@
       <object>objects\health_handler</object>
       <object>objects\roomName</object>
       <object>objects\globalHandler</object>
+      <object>objects\drawShieldHP</object>
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>
