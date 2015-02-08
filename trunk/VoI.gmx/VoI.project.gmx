@@ -113,13 +113,16 @@
     <object>objects\obj_soulConnect</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
-    <room>rooms\room2</room>
-    <room>rooms\room3</room>
-    <room>rooms\room4</room>
-    <room>rooms\room5</room>
-    <room>rooms\room6</room>
-    <room>rooms\MainRoom</room>
+    <room>rooms\room0</room>
+    <rooms name="Backup">
+      <room>rooms\room2</room>
+      <room>rooms\room1</room>
+      <room>rooms\MainRoom</room>
+      <room>rooms\room6</room>
+      <room>rooms\room5</room>
+      <room>rooms\room3</room>
+      <room>rooms\room4</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
