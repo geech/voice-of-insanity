@@ -29,9 +29,11 @@
 
 global.ball_alive = true;
 clock = 130;
+
+comeback = false;
 // Ball reset point (for player taking damage)
-xpos = 191;
-ypos = 613;
+xpos = x;
+ypos = y;
 </string>
           </argument>
         </arguments>
@@ -82,9 +84,24 @@ ypos = 613;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_object(obj_player) &gt; global.ball_dist) {
-move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
+            <string>if (distance_to_object(obj_player) &gt; global.ball_dist*.8 and comeback == false) {
+comeback = true;
+
 }
+if (comeback = true) {
+speed -= .25;
+if (speed &lt;= 0){
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd+5);
+}
+}
+if (speed &gt; global.ball_spd){
+speed -= .10;
+comeback = false;
+}
+
+/*if (distance_to_object(obj_player) &gt; global.ball_dist) {
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
+}*/
 </string>
           </argument>
         </arguments>
