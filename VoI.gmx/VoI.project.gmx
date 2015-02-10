@@ -57,6 +57,7 @@
     <sprite>sprites\spr_floor4</sprite>
     <sprite>sprites\spr_shieldHP</sprite>
     <sprite>sprites\spr_shieldHP_bmp</sprite>
+    <sprite>sprites\spr_shieldHP_Break</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -109,6 +110,7 @@
       <object>objects\roomName</object>
       <object>objects\globalHandler</object>
       <object>objects\drawShieldHP</object>
+      <object>objects\powerMenu</object>
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>

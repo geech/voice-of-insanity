@@ -91,6 +91,7 @@ ypos = y;
 comeback = false;
 }*/
 
+if (!obj_player.moving_ball) {
 if (distance_to_object(obj_player) &gt; global.ball_dist*.6 and scome == false and comeback == false) {
 scome = true;
 }
@@ -116,7 +117,7 @@ if (speed == global.ball_spd) {
 comeback = false;
 }
 }
-
+}
 
 
 

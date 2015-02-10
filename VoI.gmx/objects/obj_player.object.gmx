@@ -63,6 +63,11 @@ maxhp = health;
 
 // SKILLS
  
+powerNM[0] = "";
+powerNM[1] = "Pullback";
+powerNM[2] = "Pull to";
+powerNM[3] = "Hold";
+
    // &gt;&gt; Basic cooldown
 skill_cd = false;
 cd = 12;
@@ -72,7 +77,7 @@ cd_clock = cd;
 // &gt;&gt; Default: No skill
 current_skill = 0; // 0 = no skill
 
-
+moving_ball = false;
 check = false;
 move_Ball = false;
 move_Ball_time = 30;
@@ -268,9 +273,15 @@ if (move_Ball_time &lt;= 0){
 obj_ball.speed = global.ball_spd;
 move_Ball = false;
 check = false;
+with(obj_ball){
+scome = false;
+comeback = false;
+}
 exit
 }
 move_Ball_time -= 1;
+
+// Set this one time, or else the ball will not move
 if (check == false) {
 xx = obj_ball.x - x;
 yy = obj_ball.y - y;
@@ -1106,7 +1117,7 @@ move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
 
 if (current_skill == 3) {
 move_Ball = true;
-move_Ball_time = 30;
+move_Ball_time += 70;
 }
 
 

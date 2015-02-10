@@ -31,6 +31,9 @@ globalvar maxhp;
 health = 5
 global.maxhp = health;
 
+// Player
+globalvar current_skill;
+current_skill = 0;
 
 // Damage Values
 globalvar ball_to_player_dmg;
