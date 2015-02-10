@@ -28,10 +28,15 @@
             <string>// SET THESE VALUES WITH EACH ROOM
 
 global.ball_alive = true;
-clock = 130;
+
+mclock = 150;
+clock = mclock;
+
+comeback = false;
+scome = false;
 // Ball reset point (for player taking damage)
-xpos = 191;
-ypos = 613;
+xpos = x;
+ypos = y;
 </string>
           </argument>
         </arguments>
@@ -82,33 +87,38 @@ ypos = 613;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_object(obj_player) &gt; global.ball_dist) 
-{
-    if !(speed &lt;= 0)
-    {
-        speed -= 1;
-    }
-    
-    if (speed &lt;= 0)
-    {
-        obj_player.direction = obj_ball.direction 
-        obj_player.speed += 2;
-        move_towards_point(obj_player.x, obj_player.y, global.ball_spd+2);
-    }
-    
-    
-    
+            <string>/*if collision_circle(x, y, 1, all, true, false) {
+comeback = false;
+}*/
+
+if (distance_to_object(obj_player) &gt; global.ball_dist*.6 and scome == false and comeback == false) {
+scome = true;
 }
-/*
-if (distance_to_object(obj_player) &gt; global.ball_dist) 
-{
-    if (speed == 0)
-    {
-        move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
-    }
-    speed -= 1;
-    
+
+if (scome == true) {
+speed -= .5;
 }
+
+if (speed &lt;= 0) {
+scome = false
+comeback = true;
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
+}
+
+
+if (speed &gt; global.ball_spd){
+speed -= .25;
+if (speed == global.ball_spd) {
+comeback = false;
+}
+}
+
+
+
+
+/*if (distance_to_object(obj_player) &gt; global.ball_dist) {
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
+}*/
 </string>
           </argument>
         </arguments>
@@ -1384,7 +1394,6 @@ if (obj_ball.x &gt;= obj_shield.x+1)
     //obj_ball.hspeed += 1;
 }
 */
-obj_player.speed -= 2; 
 </string>
           </argument>
         </arguments>
@@ -1447,7 +1456,7 @@ clock -= 1;
 //show_debug_message("Player is immune");
 }
 obj_player.immune = false;
-clock = 130;
+clock = mclock;
 //show_debug_message("Player is no longer immune")
 
 </string>
@@ -1581,6 +1590,30 @@ clock = 130;
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (comeback = true){
+obj_player.direction = direction;
+obj_player.speed -= 4;
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_arrowWall">
@@ -1921,6 +1954,9 @@ clock = 130;
             <string>if (obj_player.immune == false)
 {
 health -= global.ball_to_player_dmg;
+speed = global.ball_spd;
+scome = false;
+comeback = false;
 effect_create_above(ef_spark, obj_player.x, obj_player.y, 2, c_white);
 }
 

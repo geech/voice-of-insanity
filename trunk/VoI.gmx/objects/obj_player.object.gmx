@@ -160,11 +160,7 @@ if (keyboard_check(ord("W"))) or (keyboard_check(ord("A"))) or (keyboard_check(o
     }
     //direction = image_angle +90;
 }
-if (obj_ball.speed == 0)
-{
-    speed += 2;
-    
-}
+
 /* // Removal of neg. speeds
 if 
 {
