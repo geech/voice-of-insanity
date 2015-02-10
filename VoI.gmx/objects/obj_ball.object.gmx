@@ -102,7 +102,11 @@ speed -= .5;
 if (speed &lt;= 0) {
 scome = false
 comeback = true;
+obj_player.speed = 0;
+obj_player.direction = obj_ball.direction;
+obj_player.speed += 2;
 move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
+
 }
 
 
@@ -112,6 +116,7 @@ if (speed == global.ball_spd) {
 comeback = false;
 }
 }
+
 
 
 
