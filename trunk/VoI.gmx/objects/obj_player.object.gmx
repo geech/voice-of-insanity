@@ -61,6 +61,9 @@ health = 5;
 maxhp = health;
 
 
+skill_cd = false;
+cd = 12;
+cd_clock = cd;
 
 current_skill = 0; // 0 = no skill
 </string>
@@ -69,46 +72,6 @@ current_skill = 0; // 0 = no skill
       </action>
     </event>
     <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>723</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>960</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>680</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1020</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>700</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -198,6 +161,21 @@ else
     }
 }
 
+if (keyboard_check(ord("0"))) {
+current_skill = 1;
+}
+
+else if (keyboard_check(ord("1"))) {
+current_skill = 1;
+}
+
+else if (keyboard_check(ord("2"))) {
+current_skill = 2;
+}
+
+else if (keyboard_check(ord("3"))) {
+current_skill = 3;
+}
 
 
 
@@ -222,10 +200,38 @@ else
           <argument>
             <kind>1</kind>
             <string>
-
 if obj_player.health &lt;= 0 { 
 show_debug_message("RIP Player")
 room_restart(); }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (skill_cd == true) {
+cd_clock -= 1
+
+if (cd_clock &lt;= 0) {
+cd_clock = cd;
+skill_cd = false;
+}
+
+}
 </string>
           </argument>
         </arguments>
@@ -1029,7 +1035,25 @@ speed = -4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>
+if (skill_cd = false) {
+skill_cd = true;
+if (current_skill == 0){
+show_debug_message("No skill!");
+exit;
+}
+
+// ID: 1 -&gt; Pull back
+if (current_skill == 1) {
+with(obj_ball){
+scome = false;
+comeback = true;
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
+}
+}
+
+}
+</string>
           </argument>
         </arguments>
       </action>

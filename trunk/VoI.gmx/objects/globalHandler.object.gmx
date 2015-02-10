@@ -47,7 +47,7 @@ globalvar ball_alive;
 
 // Ball Properties
 global.ball_spd = 6;
-global.ball_dist = 210;
+global.ball_dist = 238;
 
 // Damage Values
 global.ball_to_player_dmg = 1;
