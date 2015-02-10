@@ -99,7 +99,7 @@ if (scome == true) {
 speed -= .5;
 }
 
-if (speed &lt;= 0) {
+if (speed &lt;= 0 and scome == true) {
 scome = false
 comeback = true;
 obj_player.speed = 0;

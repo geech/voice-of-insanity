@@ -61,11 +61,21 @@ health = 5;
 maxhp = health;
 
 
+// SKILLS
+ 
+   // &gt;&gt; Basic cooldown
 skill_cd = false;
 cd = 12;
 cd_clock = cd;
 
+
+// &gt;&gt; Default: No skill
 current_skill = 0; // 0 = no skill
+
+
+check = false;
+move_Ball = false;
+move_Ball_time = 30;
 </string>
           </argument>
         </arguments>
@@ -232,6 +242,48 @@ skill_cd = false;
 }
 
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (move_Ball == true) {
+if (move_Ball_time &lt;= 0){
+
+obj_ball.speed = global.ball_spd;
+move_Ball = false;
+check = false;
+exit
+}
+move_Ball_time -= 1;
+if (check == false) {
+xx = obj_ball.x - x;
+yy = obj_ball.y - y;
+check = true;
+}
+
+with(obj_ball){
+speed = 0;
+x = obj_player.x + obj_player.xx;
+y = obj_player.y + obj_player.yy;
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -1052,6 +1104,13 @@ move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
 }
 }
 
+if (current_skill == 3) {
+move_Ball = true;
+move_Ball_time = 30;
+}
+
+
+// End SKill
 }
 </string>
           </argument>
