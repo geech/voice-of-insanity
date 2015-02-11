@@ -64,6 +64,13 @@
       <sprite>sprites\spr_power0</sprite>
       <sprite>sprites\spr_power2</sprite>
     </sprites>
+    <sprites name="floor">
+      <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_lf_u0</sprite>
+      <sprite>sprites\spr_lf_d</sprite>
+      <sprite>sprites\spr_lf_l</sprite>
+      <sprite>sprites\spr_lf_r</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -121,6 +128,11 @@
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>
+    <objects name="Floor">
+      <object>objects\obj_floor</object>
+      <object>objects\obj_lf_u</object>
+      <object>objects\obj_lf_d</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
