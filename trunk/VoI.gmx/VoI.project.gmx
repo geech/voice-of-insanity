@@ -117,6 +117,7 @@
       <object>objects\globalHandler</object>
       <object>objects\drawShieldHP</object>
       <object>objects\powerMenu</object>
+      <object>objects\drawDamageShield</object>
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>

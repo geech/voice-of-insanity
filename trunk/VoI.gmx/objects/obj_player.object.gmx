@@ -64,9 +64,16 @@ maxhp = health;
 // SKILLS
  
 powerNM[0] = "";
+current_power[0] = spr_power0;
+
 powerNM[1] = "Pullback";
+current_power[1] = spr_power1;
+
 powerNM[2] = "Pull to";
+current_power[2] = spr_power2;
+
 powerNM[3] = "Hold";
+current_power[3] = spr_power3;
 
    // &gt;&gt; Basic cooldown
 skill_cd = false;
@@ -178,7 +185,7 @@ else
 
 
 if (keyboard_check(ord("0"))) {
-current_skill = 1;
+current_skill = 0;
 }
 
 else if (keyboard_check(ord("1"))) {
@@ -193,6 +200,7 @@ else if (keyboard_check(ord("3"))) {
 current_skill = 3;
 }
 
+powerMenu.power_sprite = current_power[current_skill];
 
 
 </string>
