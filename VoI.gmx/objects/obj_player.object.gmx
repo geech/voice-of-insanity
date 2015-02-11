@@ -176,6 +176,7 @@ else
     }
 }
 
+
 if (keyboard_check(ord("0"))) {
 current_skill = 1;
 }
@@ -1117,7 +1118,7 @@ move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
 
 if (current_skill == 3) {
 move_Ball = true;
-move_Ball_time += 70;
+move_Ball_time += 100;
 }
 
 
