@@ -91,6 +91,13 @@ ypos = y;
 comeback = false;
 }*/
 
+if (distance_to_object(obj_player) &gt; global.ball_dist*1.3) {
+obj_player.speed = 0;
+with(obj_player){
+move_towards_point(obj_ball.x, obj_ball.y, .5);
+}
+}
+
 if (!obj_player.moving_ball) {
 if (distance_to_object(obj_player) &gt; global.ball_dist*.6 and scome == false and comeback == false) {
 scome = true;
