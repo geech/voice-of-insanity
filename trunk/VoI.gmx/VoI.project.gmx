@@ -58,6 +58,12 @@
     <sprite>sprites\spr_shieldHP</sprite>
     <sprite>sprites\spr_shieldHP_bmp</sprite>
     <sprite>sprites\spr_shieldHP_Break</sprite>
+    <sprites name="powers">
+      <sprite>sprites\spr_power1</sprite>
+      <sprite>sprites\spr_power3</sprite>
+      <sprite>sprites\spr_power0</sprite>
+      <sprite>sprites\spr_power2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
