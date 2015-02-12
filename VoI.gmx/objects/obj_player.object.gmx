@@ -561,25 +561,25 @@ health -= global.floor_dmg/45;
     <event eventtype="4" ename="obj_nasties">
       <action>
         <libid>1</libid>
-        <id>101</id>
+        <id>102</id>
         <kind>0</kind>
         <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_move</functionname>
+        <functionname>action_set_motion</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>000010000</string>
+            <kind>0</kind>
+            <string>direction</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
@@ -610,25 +610,29 @@ health -= global.floor_dmg/45;
     <event eventtype="4" ename="obj_ball">
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_ball</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>immune = true;
+
+with(obj_ball){
+//obj_ball.sprite_index = 
+speed = false;
+visable = false
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -864,13 +868,13 @@ health -= global.floor_dmg;
     <event eventtype="4" ename="obj_wallBreak">
       <action>
         <libid>1</libid>
-        <id>103</id>
+        <id>102</id>
         <kind>0</kind>
         <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
+        <functionname>action_set_motion</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -878,27 +882,11 @@ health -= global.floor_dmg;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>direction</string>
           </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>104</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_vspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
@@ -906,13 +894,13 @@ health -= global.floor_dmg;
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
-        <id>103</id>
+        <id>102</id>
         <kind>0</kind>
         <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_set_hspeed</functionname>
+        <functionname>action_set_motion</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -920,27 +908,11 @@ health -= global.floor_dmg;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>direction</string>
           </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>104</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_vspeed</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>-1</string>
           </argument>
         </arguments>
       </action>
