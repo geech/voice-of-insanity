@@ -27,8 +27,11 @@
     <sound>sound\snd_lava</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\e</sprite>
     <sprite>sprites\spr_wallBreak</sprite>
+    <sprites name="Wall">
+      <sprite>sprites\wall_single</sprite>
+      <sprite>sprites\wall_midU</sprite>
+    </sprites>
     <sprite>sprites\spr_player_stand</sprite>
     <sprite>sprites\spr_player_walk</sprite>
     <sprite>sprites\spr_shield_stand</sprite>
@@ -42,7 +45,6 @@
     <sprite>sprites\boxGUI</sprite>
     <sprite>sprites\spr_crate</sprite>
     <sprite>sprites\spr_sound</sprite>
-    <sprite>sprites\spr_floor1</sprite>
     <sprite>sprites\spr_doorVclosed</sprite>
     <sprite>sprites\spr_doorVopen</sprite>
     <sprite>sprites\spr_doorHclosed</sprite>
@@ -52,9 +54,6 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_pressureP</sprite>
     <sprite>sprites\spr_switchN</sprite>
-    <sprite>sprites\spr_floor2</sprite>
-    <sprite>sprites\spr_floor3</sprite>
-    <sprite>sprites\spr_floor4</sprite>
     <sprite>sprites\spr_shieldHP</sprite>
     <sprite>sprites\spr_shieldHP_bmp</sprite>
     <sprite>sprites\spr_shieldHP_Break</sprite>
