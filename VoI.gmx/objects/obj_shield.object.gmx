@@ -76,9 +76,9 @@ obj_shield.image_angle = obj_player.image_angle;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!obj_player.ballspawn){
+            <string>//if (obj_player.ballspawn == false){
 obj_player.speed = 0;
-}
+//}
 </string>
           </argument>
         </arguments>

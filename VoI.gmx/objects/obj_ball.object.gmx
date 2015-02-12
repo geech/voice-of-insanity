@@ -1413,30 +1413,6 @@ if (obj_ball.x &gt;= obj_shield.x+1)
       </action>
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -1462,7 +1438,7 @@ if (obj_ball.x &gt;= obj_shield.x+1)
 
 // This, along with the pause in player movement while hitting the ball should be a fix
 
-if (!obj_player.ballspawn){
+//if (obj_player.ballspawn == false){
 
 
 obj_player.immune = true;
@@ -1474,7 +1450,7 @@ clock -= 1;
 obj_player.immune = false;
 clock = mclock;
 //show_debug_message("Player is no longer immune")
-}
+//}
 </string>
           </argument>
         </arguments>
@@ -1627,6 +1603,29 @@ clock = mclock;
 obj_player.direction = direction;
 obj_player.speed -= 4;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//if (obj_player.ball_spawn == false) {
+move_bounce_solid(true);
+//}
 </string>
           </argument>
         </arguments>
@@ -2108,6 +2107,30 @@ effect_create_above(ef_spark, obj_player.x, obj_player.y, 2, c_white);
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
