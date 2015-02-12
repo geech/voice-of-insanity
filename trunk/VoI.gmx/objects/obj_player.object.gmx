@@ -84,6 +84,8 @@ cd_clock = cd;
 // &gt;&gt; Default: No skill
 current_skill = 0; // 0 = no skill
 
+ballspawn = false;
+
 moving_ball = false;
 check = false;
 move_Ball = false;
@@ -351,6 +353,39 @@ if (collision_circle(x, y, 6, obj_wallBreak, true, false)){obj_player.movetoball
 if (collision_circle(x, y, 6, obj_movingWall, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
 }
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (ballspawn == true)  {
+if (spawn_time &lt;= 0){
+with(obj_ball){
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
+//visible = true;
+scome = false;
+comeback = false;
+
+}
+ballspawn = false;
+}
+spawn_time -= 1;
 }
 </string>
           </argument>
@@ -624,13 +659,15 @@ health -= global.floor_dmg/45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>immune = true;
+            <string>ballspawn = true;
+immune = true;
 
 with(obj_ball){
-//obj_ball.sprite_index = 
-speed = false;
-visable = false
+speed = 0;
+//visible = false;
+solid = false;
 }
+spawn_time = 10;
 
 </string>
           </argument>

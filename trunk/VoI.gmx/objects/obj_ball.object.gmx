@@ -1462,6 +1462,9 @@ if (obj_ball.x &gt;= obj_shield.x+1)
 
 // This, along with the pause in player movement while hitting the ball should be a fix
 
+if (!obj_player.ballspawn){
+
+
 obj_player.immune = true;
 
 while (clock != 0) {
@@ -1471,7 +1474,7 @@ clock -= 1;
 obj_player.immune = false;
 clock = mclock;
 //show_debug_message("Player is no longer immune")
-
+}
 </string>
           </argument>
         </arguments>
