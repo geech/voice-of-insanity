@@ -85,6 +85,7 @@ cd_clock = cd;
 current_skill = 0; // 0 = no skill
 
 ballspawn = false;
+spawn_time = 0;
 
 moving_ball = false;
 check = false;
@@ -375,9 +376,15 @@ if (collision_circle(x, y, 6, obj_movingWall, true, false)){obj_player.movetobal
           <argument>
             <kind>1</kind>
             <string>if (ballspawn == true)  {
+immune = true;
+if (spawn_time &lt;= 70){
+with (obj_ball){
+move_towards_point(obj_player.x, obj_player.y, global.ball_spd);}
+}
+
 if (spawn_time &lt;= 0){
 with(obj_ball){
-move_towards_point(obj_player.x, obj_player.y, global.ball_spd);
+
 //visible = true;
 scome = false;
 comeback = false;
@@ -659,7 +666,10 @@ health -= global.floor_dmg/45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ballspawn = true;
+            <string>/*if (ballspawn == false){
+ballspawn = true;
+
+spawn_time += 100;
 immune = true;
 
 with(obj_ball){
@@ -667,8 +677,8 @@ speed = 0;
 //visible = false;
 solid = false;
 }
-spawn_time = 10;
 
+}*/
 </string>
           </argument>
         </arguments>
