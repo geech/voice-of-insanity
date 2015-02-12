@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rech = random(300);
+            <string>/*rech = random(300);*/
 </string>
           </argument>
         </arguments>
@@ -48,12 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rech -= 1;
+            <string>/*rech -= 1;
 if (rech &lt;= 0) {
 
 effect_create_above(ef_spark, bbox_left + random(sprite_width), bbox_top + random(sprite_height), 2, c_blue);
 rech = random(20) + 270;
-}
+}*/
 </string>
           </argument>
         </arguments>
