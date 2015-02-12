@@ -76,6 +76,7 @@
       <sprite>sprites\spr_lf_d</sprite>
       <sprite>sprites\spr_lf_l</sprite>
       <sprite>sprites\spr_lf_r</sprite>
+      <sprite>sprites\spr_grass</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -148,6 +149,7 @@
       <object>objects\obj_floor</object>
       <object>objects\obj_lf_u</object>
       <object>objects\obj_lf_d</object>
+      <object>objects\obj_grass</object>
     </objects>
   </objects>
   <rooms name="rooms">
