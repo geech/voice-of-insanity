@@ -31,6 +31,13 @@
     <sprites name="Wall">
       <sprite>sprites\wall_single</sprite>
       <sprite>sprites\wall_midU</sprite>
+      <sprite>sprites\wall_corTR</sprite>
+      <sprite>sprites\wall_corTL</sprite>
+      <sprite>sprites\wall_corBL</sprite>
+      <sprite>sprites\wall_corBR</sprite>
+      <sprite>sprites\wall_midD</sprite>
+      <sprite>sprites\wall_sideL</sprite>
+      <sprite>sprites\wall_sideR</sprite>
     </sprites>
     <sprite>sprites\spr_player_stand</sprite>
     <sprite>sprites\spr_player_walk</sprite>
@@ -86,7 +93,17 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_monster</object>
-    <object>objects\obj_wall</object>
+    <objects name="Walls">
+      <object>objects\obj_wall</object>
+      <object>objects\obj_wallmidU</object>
+      <object>objects\obj_wallTL</object>
+      <object>objects\obj_wallTR</object>
+      <object>objects\obj_wallSL</object>
+      <object>objects\obj_wallSR</object>
+      <object>objects\obj_wallBL</object>
+      <object>objects\obj_wallBR</object>
+      <object>objects\obj_wallmidD</object>
+    </objects>
     <object>objects\obj_arrowWall</object>
     <object>objects\obj_wallBreak</object>
     <object>objects\obj_shield</object>
