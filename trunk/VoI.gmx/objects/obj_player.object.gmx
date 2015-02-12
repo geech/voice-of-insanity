@@ -67,10 +67,10 @@ powerNM[0] = "";
 current_power[0] = spr_power0;
 
 powerNM[1] = "Pullback";
-current_power[1] = spr_power1;
+current_power[1] = spr_power2;
 
 powerNM[2] = "Pull to";
-current_power[2] = spr_power2;
+current_power[2] = spr_power1;
 
 powerNM[3] = "Hold";
 current_power[3] = spr_power3;
@@ -87,7 +87,10 @@ current_skill = 0; // 0 = no skill
 moving_ball = false;
 check = false;
 move_Ball = false;
-move_Ball_time = 30;
+move_Ball_time = 0;
+
+movetoball = false;
+movetoball_time = 0;
 </string>
           </argument>
         </arguments>
@@ -308,6 +311,51 @@ y = obj_player.y + obj_player.yy;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (movetoball == false){
+immune = false;
+}
+
+if (movetoball == true) {
+if (movetoball_time &lt;= 0) {
+movetoball = false;
+
+}
+movetoball_time -= 1;
+move_towards_point(obj_ball.x, obj_ball.y, global.ball_spd);
+immune = true;
+
+with(obj_ball){
+if (collision_circle(x, y, 6, obj_wall, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_nasties, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_sOff1, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_sOn, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_doorH, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_doorV, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_wallBreak, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+if (collision_circle(x, y, 6, obj_movingWall, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
+}
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_floorNasties">
       <action>
@@ -412,9 +460,11 @@ y = obj_player.y + obj_player.yy;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(.1)
+            <string>if (immune == false) {
+draw_set_alpha(.02)
 effect_create_above(ef_smoke, x, y, .5, c_orange);
 draw_set_alpha(1)
+}
 </string>
           </argument>
         </arguments>
@@ -499,7 +549,9 @@ draw_set_alpha(1)
  
  
 //speed = -4;
+if (immune == false) {
 health -= global.floor_dmg/45;
+}
 
 </string>
           </argument>
@@ -1050,6 +1102,11 @@ scome = false;
 comeback = true;
 move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
 }
+}
+
+if (current_skill == 2) {
+movetoball = true;
+movetoball_time += 150;
 }
 
 if (current_skill == 3) {

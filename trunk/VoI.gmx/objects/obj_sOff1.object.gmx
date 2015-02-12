@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>ring = 130;
 
+useB = false;
 </string>
           </argument>
         </arguments>
@@ -229,6 +230,10 @@ ring = 130;
           <argument>
             <kind>1</kind>
             <string>a.am += 1;
+
+if (useB == true) {
+b.am += 1;
+}
 </string>
           </argument>
         </arguments>

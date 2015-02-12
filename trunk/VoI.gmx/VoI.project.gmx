@@ -133,6 +133,7 @@
       <object>objects\obj_lf_u</object>
       <object>objects\obj_lf_d</object>
     </objects>
+    <object>objects\object44</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
