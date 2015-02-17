@@ -57,7 +57,7 @@
 rt_spd = 5;
 immune = false;
 
-health = 5;
+health = 10;
 maxhp = health;
 
 
