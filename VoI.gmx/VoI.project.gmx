@@ -138,6 +138,7 @@
       <object>objects\testboxGUI</object>
       <object>objects\health_handler</object>
       <object>objects\roomName</object>
+      <object>objects\obj_pause_Ctrl</object>
       <object>objects\globalHandler</object>
       <object>objects\drawShieldHP</object>
       <object>objects\powerMenu</object>
