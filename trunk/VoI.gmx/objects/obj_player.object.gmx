@@ -78,8 +78,8 @@ current_power[3] = spr_power3;
 
    // &gt;&gt; Basic cooldown
 skill_cd = false;
-cd = 12;
-cd_clock = cd;
+max_cd = 330;
+cd_clock = max_cd;
 
 
 // &gt;&gt; Default: No skill
@@ -190,7 +190,7 @@ else
     }
 }
 
-
+if (skill_cd == false) {
 if (keyboard_check(ord("0"))) {
 current_skill = 0;
 }
@@ -206,7 +206,7 @@ current_skill = 2;
 else if (keyboard_check(ord("3"))) {
 current_skill = 3;
 }
-
+}
 powerMenu.power_sprite = current_power[current_skill];
 
 
@@ -254,13 +254,16 @@ room_restart(); }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (skill_cd == true) {
-cd_clock -= 1
+            <string>
+if (skill_cd == true) {
+    cd_clock -= 1
 
-if (cd_clock &lt;= 0) {
-cd_clock = cd;
-skill_cd = false;
-}
+    if (cd_clock &lt;= 0) {
+        skill_cd = false;
+        with(powerMenu){
+        effect_create_above(ef_ring, x-25, y, 1, c_aqua);
+        }
+    }
 
 }
 </string>
@@ -1263,9 +1266,10 @@ speed = -4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (skill_cd = false) {
-skill_cd = true;
+            <string>if (skill_cd = false) {
+ // Set counter to 0, works in reverse
+
+
 if (current_skill == 0){
 show_debug_message("No skill!");
 exit;
@@ -1273,35 +1277,41 @@ exit;
 
 //if (usePower == false) {
 
+// Default room speed is 30
+// So, 30 steps per second
+// Use that for cooldownds
+
 // ID: 1 -&gt; Pull back
 if (current_skill == 1) {
+max_cd = 90; // 3 Seconds
 with(obj_ball){
 scome = false;
 comeback = true;
 move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
 }
-exit
 }
 
-if (current_skill == 2 and movetoball == true){
+else if (current_skill == 2 and movetoball == true){
 movetoball = false;
 movetoball_time = 0;
-exit
+
 }
 
-if (current_skill == 2) {
+else if (current_skill == 2) {
 movetoball = true;
 movetoball_time += 150;
-exit
+
 }
 
-
-
-if (current_skill == 3) {
+else if (current_skill == 3) {
+max_cd = 360; // 12 Seconds
 move_Ball = true;
 move_Ball_time += 100;
-exit
+
 }
+
+cd_clock = max_cd;
+skill_cd = true;
 
 
 // End SKill
