@@ -13,6 +13,6 @@ instance_create(15, pos_y+480, roomName);
 
 // Item
 instance_create(97, pos_y+420, powerMenu);// nice
-
+instance_create(97, pos_y+420, powerMenu_cd);
 
 instance_create(0, pos_y, globalHandler); 

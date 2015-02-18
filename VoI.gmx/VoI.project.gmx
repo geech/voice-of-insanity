@@ -45,6 +45,7 @@
     <sprite>sprites\spr_shield_walk</sprite>
     <sprite>sprites\spr_switchOff</sprite>
     <sprite>sprites\spr_switchOn</sprite>
+    <sprite>sprites\spr_switchN</sprite>
     <sprite>sprites\spr_nasties</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_ball_yellow</sprite>
@@ -64,7 +65,6 @@
     <sprite>sprites\spr_arrowWall</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_pressureP</sprite>
-    <sprite>sprites\spr_switchN</sprite>
     <sprite>sprites\spr_shieldHP</sprite>
     <sprite>sprites\spr_shieldHP_bmp</sprite>
     <sprite>sprites\spr_shieldHP_Break</sprite>
@@ -146,6 +146,7 @@
       <object>objects\globalHandler</object>
       <object>objects\drawShieldHP</object>
       <object>objects\powerMenu</object>
+      <object>objects\powerMenu_cd</object>
       <object>objects\drawDamageShield</object>
     </objects>
     <object>objects\obj_pressureP</object>
