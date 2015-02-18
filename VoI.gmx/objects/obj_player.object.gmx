@@ -57,6 +57,7 @@
 rt_spd = 5;
 immune = false;
 
+
 health = 10;
 maxhp = health;
 
@@ -1043,6 +1044,32 @@ health -= global.floor_dmg;
       </action>
     </event>
     <event eventtype="4" ename="obj_wallBreak">
+      <action>
+        <libid>1</libid>
+        <id>102</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_motion</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>direction</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_arrowWall">
       <action>
         <libid>1</libid>
         <id>102</id>
