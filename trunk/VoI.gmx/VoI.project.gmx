@@ -47,6 +47,10 @@
     <sprite>sprites\spr_switchOn</sprite>
     <sprite>sprites\spr_nasties</sprite>
     <sprite>sprites\spr_ball</sprite>
+    <sprite>sprites\spr_ball_yellow</sprite>
+    <sprite>sprites\spr_ball_green</sprite>
+    <sprite>sprites\spr_ball_orange</sprite>
+    <sprite>sprites\spr_ball_red</sprite>
     <sprite>sprites\spr_contr</sprite>
     <sprite>sprites\spr_floorNasties</sprite>
     <sprite>sprites\boxGUI</sprite>
