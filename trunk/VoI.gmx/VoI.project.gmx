@@ -92,6 +92,10 @@
       <sprite>sprites\spr_cloud1</sprite>
       <sprite>sprites\spr_cloud2</sprite>
       <sprite>sprites\spr_cloud3</sprite>
+      <sprite>sprites\spr_options</sprite>
+      <sprite>sprites\spr_newgame</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_box</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -175,6 +179,10 @@
       <object>objects\obj_cloud1</object>
       <object>objects\obj_cloud2</object>
       <object>objects\obj_cloud3</object>
+      <object>objects\obj_options</object>
+      <object>objects\obj_newgame</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_tBox</object>
     </objects>
   </objects>
   <rooms name="rooms">

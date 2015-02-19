@@ -28,7 +28,7 @@
             <string>direction = 180;
 
 y = 470 + random(250);
-speed = random(6);
+speed = random(4);
 
 if speed &lt; 1{ speed += 1 }
 </string>
@@ -56,7 +56,7 @@ if speed &lt; 1{ speed += 1 }
             <string>if x &lt; -150{
 x = 1300 + random(100);
 y = 420 + random(300);
-speed = random(6);
+speed = random(4);
 
 if speed &lt; 1{ speed += 1 }
 }
