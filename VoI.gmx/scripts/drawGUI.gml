@@ -9,6 +9,8 @@ instance_create(98, pos_y + 89, drawDamageShield);
 
 // Shield showing HP:
 instance_create(58, pos_y + 165, obj_shieldHP);
+instance_create(144, pos_y + 165, obj_ballHP);
+
 // Uncomment for health bar to appear 
 //instance_create(15, pos_y+ 500, health_handler);
 
