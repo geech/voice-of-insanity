@@ -1293,17 +1293,14 @@ obj_ballHP.color = c_white;
 }
 }
 
-else if (current_skill == 2 and movetoball == true){
-max_cd = 30;
-/*movetoball = false;
-movetoball_time = 0;
-*/
-}
-
 else if (current_skill == 2) {
-/*movetoball = true;
-movetoball_time += 150;*/
-mad_cd = 30;
+max_cd = 210;
+tempx = x;
+tempy =y;
+x = obj_ball.x;
+y = obj_ball.y;
+obj_ball.x = tempx;
+obj_ball.y = tempy;
 }
 
 else if (current_skill == 3) {
