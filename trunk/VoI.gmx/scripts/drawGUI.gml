@@ -1,4 +1,5 @@
 global.roomNM = "";
+
 pos_y = 3232;
 instance_create(0, 0, obj_soulConnect);
 instance_create(0, pos_y, testboxGUI);
@@ -14,7 +15,7 @@ instance_create(144, pos_y + 165, obj_ballHP);
 // Uncomment for health bar to appear 
 //instance_create(15, pos_y+ 500, health_handler);
 
-instance_create(15, pos_y+480, roomName);
+instance_create(40, pos_y+40, roomName);
 
 // Item
 instance_create(97, pos_y+420, powerMenu);// nice

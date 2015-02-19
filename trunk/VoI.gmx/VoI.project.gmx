@@ -114,6 +114,9 @@
   <scripts name="scripts">
     <script>scripts\drawGUI.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_DD</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_monster</object>
