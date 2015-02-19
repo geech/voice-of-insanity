@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>audio_play_sound(snd_ballHit3, 9, false);
 if (global.menu_choice != 2) {
 global.menu_choice += 1;
 y += 59;
@@ -52,7 +52,7 @@ y += 59;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>audio_play_sound(snd_ballHit3, 9, false);
 if (global.menu_choice != 0) {
 global.menu_choice -= 1;
 y -= 59;
