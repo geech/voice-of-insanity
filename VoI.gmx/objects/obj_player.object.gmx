@@ -1294,19 +1294,20 @@ obj_ballHP.color = c_white;
 }
 
 else if (current_skill == 2 and movetoball == true){
-movetoball = false;
+max_cd = 30;
+/*movetoball = false;
 movetoball_time = 0;
-
+*/
 }
 
 else if (current_skill == 2) {
-movetoball = true;
-movetoball_time += 150;
-
+/*movetoball = true;
+movetoball_time += 150;*/
+mad_cd = 30;
 }
 
 else if (current_skill == 3) {
-max_cd = 360; // 12 Seconds
+max_cd = 450; // 12 Seconds
 move_Ball = true;
 move_Ball_time += 100;
 obj_ballHP.color = c_yellow;
