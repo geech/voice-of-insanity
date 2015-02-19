@@ -288,7 +288,7 @@ if (skill_cd == true) {
             <kind>1</kind>
             <string>if (move_Ball == true) {
 if (move_Ball_time &lt;= 0){
-
+obj_ballHP.color = c_white;
 obj_ball.speed = global.ball_spd;
 move_Ball = false;
 check = false;
@@ -1283,11 +1283,13 @@ exit;
 
 // ID: 1 -&gt; Pull back
 if (current_skill == 1) {
+obj_ballHP.color = c_green;
 max_cd = 90; // 3 Seconds
 with(obj_ball){
 scome = false;
 comeback = true;
 move_towards_point(obj_player.x, obj_player.y, global.ball_spd+6);
+obj_ballHP.color = c_white;
 }
 }
 
@@ -1307,7 +1309,7 @@ else if (current_skill == 3) {
 max_cd = 360; // 12 Seconds
 move_Ball = true;
 move_Ball_time += 100;
-
+obj_ballHP.color = c_yellow;
 }
 
 cd_clock = max_cd;
