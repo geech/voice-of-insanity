@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.menu_choice == 0) {
+            <string>audio_play_sound(snd_Title_select, 9, false);
+if (global.menu_choice == 0) {
 room_goto(1);
 }
+audio_stop_all();
+
 </string>
           </argument>
         </arguments>

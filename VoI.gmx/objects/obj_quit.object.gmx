@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.menu_choice == 2) {
+            <string>audio_play_sound(snd_Title_select, 9, false);
+if (global.menu_choice == 2) {
 game_end()
 }
 </string>

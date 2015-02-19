@@ -26,6 +26,8 @@
     <sound>sound\snd_playerDam3</sound>
     <sound>sound\snd_lava</sound>
     <sound>sound\snd_Title</sound>
+    <sound>sound\snd_Title_click</sound>
+    <sound>sound\snd_Title_select</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Shield">
