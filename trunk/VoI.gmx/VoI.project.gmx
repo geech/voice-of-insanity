@@ -88,12 +88,18 @@
       <sprite>sprites\spr_lf_r</sprite>
       <sprite>sprites\spr_grass</sprite>
     </sprites>
+    <sprites name="Title">
+      <sprite>sprites\spr_cloud1</sprite>
+      <sprite>sprites\spr_cloud2</sprite>
+      <sprite>sprites\spr_cloud3</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\title_background</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -121,6 +127,7 @@
     <object>objects\obj_arrow</object>
     <object>objects\obj_s1</object>
     <object>objects\obj_sOff1</object>
+    <object>objects\obj_floorT1</object>
     <object>objects\obj_slowBall</object>
     <object>objects\obj_s4</object>
     <object>objects\obj_soundCtrl</object>
@@ -132,7 +139,6 @@
     <object>objects\obj_s3</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_movingWall</object>
-    <object>objects\obj_floorT1</object>
     <object>objects\obj_black</object>
     <object>objects\obj_room1Ctrl</object>
     <object>objects\obj_sensor3</object>
@@ -165,8 +171,14 @@
       <object>objects\obj_lf_d</object>
       <object>objects\obj_grass</object>
     </objects>
+    <objects name="title">
+      <object>objects\obj_cloud1</object>
+      <object>objects\obj_cloud2</object>
+      <object>objects\obj_cloud3</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TitleScreen</room>
     <room>rooms\room0</room>
     <rooms name="Backup">
       <room>rooms\room2</room>
