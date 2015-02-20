@@ -197,19 +197,23 @@ current_skill = 0;
 
 else if (keyboard_check(ord("1"))) {
 current_skill = 1;
+powerMenu_skill.y = powerMenu.y-2;
 }
 
 else if (keyboard_check(ord("2"))) {
 current_skill = 2;
+powerMenu_skill.y = powerMenu1.y-2;
 }
 
 else if (keyboard_check(ord("3"))) {
 current_skill = 3;
+powerMenu_skill.y = powerMenu2.y-2;
 }
 }
-powerMenu.power_sprite = current_power[current_skill];
 
-
+if (current_skill != 0) {
+instance_activate_object(powerMenu_skill)
+}
 </string>
           </argument>
         </arguments>
