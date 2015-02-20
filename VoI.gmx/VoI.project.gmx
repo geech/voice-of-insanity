@@ -100,6 +100,7 @@
       <sprite>sprites\spr_quit</sprite>
       <sprite>sprites\spr_box</sprite>
     </sprites>
+    <sprite>sprites\spr_skillSelect</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -168,7 +169,11 @@
       <object>objects\globalHandler</object>
       <object>objects\drawShieldHP</object>
       <object>objects\powerMenu</object>
+      <object>objects\powerMenu1</object>
+      <object>objects\powerMenu2</object>
       <object>objects\powerMenu_cd</object>
+      <object>objects\powerMenu_cd2</object>
+      <object>objects\powerMenu_cd1</object>
       <object>objects\drawDamageShield</object>
       <object>objects\obj_shieldHP</object>
       <object>objects\obj_ballHP</object>
