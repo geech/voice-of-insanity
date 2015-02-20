@@ -18,7 +18,13 @@ instance_create(144, pos_y + 165, obj_ballHP);
 instance_create(40, pos_y+40, roomName);
 
 // Item
-instance_create(97, pos_y+420, powerMenu);// nice
-instance_create(97, pos_y+420, powerMenu_cd);
+instance_create(97, pos_y+320, powerMenu);// nice
+instance_create(97, pos_y+320, powerMenu_cd);
+
+instance_create(97, pos_y+420, powerMenu1);// nice
+instance_create(97, pos_y+420, powerMenu_cd1);
+
+instance_create(97, pos_y+520, powerMenu2);// nice
+instance_create(97, pos_y+520, powerMenu_cd2);
 
 instance_create(0, pos_y, globalHandler); 
