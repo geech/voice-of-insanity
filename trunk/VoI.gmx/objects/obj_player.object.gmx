@@ -93,8 +93,6 @@ check = false;
 move_Ball = false;
 move_Ball_time = 0;
 
-movetoball = false;
-movetoball_time = 0;
 </string>
           </argument>
         </arguments>
@@ -264,7 +262,10 @@ if (skill_cd == true) {
 
     if (cd_clock &lt;= 0) {
         skill_cd = false;
-        with(powerMenu){
+        if (current_skill == 1) { sk = powerMenu }
+        if (current_skill == 2) { sk = powerMenu1 }
+        if (current_skill == 3) { sk = powerMenu2 }
+        with(sk){
         effect_create_above(ef_ring, x-25, y, 1, c_aqua);
         }
     }
@@ -318,51 +319,6 @@ y = obj_player.y + obj_player.yy;
     }
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (movetoball == false){
-immune = false;
-}
-
-if (movetoball == true) {
-if (movetoball_time &lt;= 0) {
-movetoball = false;
-
-}
-movetoball_time -= 1;
-move_towards_point(obj_ball.x, obj_ball.y, global.ball_spd);
-immune = true;
-
-with(obj_ball){
-if (collision_circle(x, y, 6, obj_wall, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_nasties, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_sOff1, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_sOn, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_doorH, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_doorV, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_wallBreak, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-if (collision_circle(x, y, 6, obj_movingWall, true, false)){obj_player.movetoball = false; movetoball_time = 0;}
-}
-
-}
 </string>
           </argument>
         </arguments>
