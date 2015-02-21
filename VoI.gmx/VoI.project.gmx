@@ -163,18 +163,15 @@
     <object>objects\obj_floorNasties</object>
     <objects name="GUI">
       <object>objects\testboxGUI</object>
-      <object>objects\health_handler</object>
       <object>objects\roomName</object>
       <object>objects\obj_pause_Ctrl</object>
       <object>objects\globalHandler</object>
-      <object>objects\drawShieldHP</object>
       <object>objects\powerMenu</object>
       <object>objects\powerMenu1</object>
       <object>objects\powerMenu2</object>
       <object>objects\powerMenu_cd</object>
       <object>objects\powerMenu_cd2</object>
       <object>objects\powerMenu_cd1</object>
-      <object>objects\drawDamageShield</object>
       <object>objects\obj_shieldHP</object>
       <object>objects\obj_ballHP</object>
       <object>objects\powerMenu_skill</object>

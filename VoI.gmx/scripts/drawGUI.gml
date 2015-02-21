@@ -4,9 +4,6 @@ pos_y = 3232;
 instance_create(0, 0, obj_soulConnect);
 instance_create(0, pos_y, testboxGUI);
 
-// Leaving these here for now, will remove later
-instance_create(98, pos_y + 89, drawShieldHP);
-instance_create(98, pos_y + 89, drawDamageShield);
 
 // Shield showing HP:
 instance_create(58, pos_y + 165, obj_shieldHP);
