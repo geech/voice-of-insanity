@@ -9,13 +9,11 @@ instance_create(0, pos_y, testboxGUI);
 instance_create(58, pos_y + 165, obj_shieldHP);
 instance_create(144, pos_y + 165, obj_ballHP);
 
-// Uncomment for health bar to appear 
-//instance_create(15, pos_y+ 500, health_handler);
 
+// Room Name
 instance_create(40, pos_y+40, roomName);
 
 // Item
-
 instance_create(99, 2000, powerMenu_skill); // they'll never find me here
 
 instance_create(97, pos_y+320, powerMenu);

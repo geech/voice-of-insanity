@@ -234,8 +234,12 @@ instance_activate_object(powerMenu_skill)
             <kind>1</kind>
             <string>
 if obj_player.health &lt;= 0 { 
-show_debug_message("RIP Player")
-room_restart(); }
+room_goto(Deaded);
+
+show_debug_message("RIP Player");
+audio_stop_all();
+instance_deactivate_all(false);
+ }
 </string>
           </argument>
         </arguments>
