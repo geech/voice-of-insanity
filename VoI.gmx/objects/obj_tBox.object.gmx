@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xpos = 0;
-ypos = 0;
-
-avail = true;
+            <string>avail = true;
 
 </string>
           </argument>
@@ -145,6 +142,7 @@ global.menu_choice -= 1;
           <argument>
             <kind>1</kind>
             <string>avail = false;
+audio_play_sound(snd_Title_select, 9, false);
 </string>
           </argument>
         </arguments>

@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>
 if (global.menu_choice == 3) {
-audio_play_sound(snd_Title_select, 11, false);
 game_end()
 }
 </string>

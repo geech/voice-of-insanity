@@ -132,6 +132,8 @@
       <object>objects\obj_wallBL</object>
       <object>objects\obj_wallBR</object>
       <object>objects\obj_wallmidD</object>
+      <object>objects\switchSound</object>
+      <object>objects\wallSound</object>
     </objects>
     <object>objects\obj_arrowWall</object>
     <object>objects\obj_wallBreak</object>
@@ -195,15 +197,6 @@
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
     <room>rooms\room0</room>
-    <rooms name="Backup">
-      <room>rooms\room2</room>
-      <room>rooms\room1</room>
-      <room>rooms\MainRoom</room>
-      <room>rooms\room6</room>
-      <room>rooms\room5</room>
-      <room>rooms\room3</room>
-      <room>rooms\room4</room>
-    </rooms>
     <room>rooms\Deaded</room>
   </rooms>
   <help>
