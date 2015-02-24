@@ -92,6 +92,7 @@
       <sprite>sprites\spr_grass</sprite>
     </sprites>
     <sprites name="Title">
+      <sprite>sprites\spr_tutorial</sprite>
       <sprite>sprites\spr_cloud1</sprite>
       <sprite>sprites\spr_cloud2</sprite>
       <sprite>sprites\spr_cloud3</sprite>
@@ -182,6 +183,7 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_tBox</object>
       <object>objects\to_Title</object>
+      <object>objects\obj_tutorial</object>
     </objects>
   </objects>
   <rooms name="rooms">

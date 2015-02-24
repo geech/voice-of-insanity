@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(snd_Title_click, 9, false);
-if (global.menu_choice != 2) {
+if (global.menu_choice != global.menu_len) {
 global.menu_choice += 1;
 y += 59;
 }
