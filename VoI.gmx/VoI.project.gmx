@@ -103,11 +103,8 @@
     <sprite>sprites\spr_skillSelect</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\background1</background>
-    <background>background\background2</background>
-    <background>background\background3</background>
     <background>background\title_background</background>
+    <background>background\GameOver_sample</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -150,14 +147,6 @@
     <object>objects\obj_s3</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_movingWall</object>
-    <object>objects\obj_black</object>
-    <object>objects\obj_room1Ctrl</object>
-    <object>objects\obj_sensor3</object>
-    <object>objects\obj_room2Ctrl</object>
-    <object>objects\obj_romm3Ctrl</object>
-    <object>objects\obj_room4Ctrl</object>
-    <object>objects\obj_sensor1</object>
-    <object>objects\obj_sensor2</object>
     <object>objects\obj_nasties</object>
     <object>objects\obj_sOn</object>
     <object>objects\obj_floorNasties</object>
@@ -192,6 +181,7 @@
       <object>objects\obj_newgame</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_tBox</object>
+      <object>objects\to_Title</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -206,6 +196,7 @@
       <room>rooms\room3</room>
       <room>rooms\room4</room>
     </rooms>
+    <room>rooms\Deaded</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
