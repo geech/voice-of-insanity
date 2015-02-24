@@ -65,6 +65,7 @@ if (global.menu_choice == 3) {x = obj_quit.x; y = obj_quit.y}
 if (global.menu_id == 2) {
 global.menu_len = 1;
 if (global.menu_choice == 0) {x = obj_sound.x; y = obj_sound.y}
+//if (global.menu_choice == 1) {x = obj_MusicSound.x; y = obj_MusicSound.y}
 if (global.menu_choice == 1) {x = obj_return.x; y = obj_return.y}
 }
 </string>

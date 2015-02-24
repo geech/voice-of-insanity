@@ -103,6 +103,9 @@
       <sprite>sprites\spr_soundT</sprite>
       <sprite>sprites\spr_Vol</sprite>
       <sprite>sprites\spr_back</sprite>
+      <sprite>sprites\spr_music</sprite>
+      <sprite>sprites\sprite66</sprite>
+      <sprite>sprites\spr_master</sprite>
     </sprites>
     <sprite>sprites\spr_skillSelect</sprite>
   </sprites>
@@ -139,18 +142,12 @@
     <object>objects\obj_wallBreak</object>
     <object>objects\obj_shield</object>
     <object>objects\obj_arrow</object>
-    <object>objects\obj_s1</object>
     <object>objects\obj_sOff1</object>
-    <object>objects\obj_floorT1</object>
-    <object>objects\obj_slowBall</object>
-    <object>objects\obj_s4</object>
     <object>objects\obj_soundCtrl</object>
     <object>objects\obj_doorH</object>
     <object>objects\obj_doorV</object>
     <object>objects\obj_doorOpenV</object>
     <object>objects\obj_doorOpenH</object>
-    <object>objects\obj_s2</object>
-    <object>objects\obj_s3</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_movingWall</object>
     <object>objects\obj_nasties</object>
@@ -190,7 +187,9 @@
       <object>objects\to_Title</object>
       <object>objects\obj_tutorial</object>
       <object>objects\obj_sound</object>
+      <object>objects\obj_MusicSound</object>
       <object>objects\obj_Vol</object>
+      <object>objects\obj_musicVol</object>
       <object>objects\obj_return</object>
     </objects>
   </objects>
