@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>volume = 1;
 
-set_delay = 10;
+set_delay = 5;
 delay = 0;
 </string>
           </argument>

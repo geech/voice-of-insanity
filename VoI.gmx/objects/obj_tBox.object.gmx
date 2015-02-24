@@ -29,6 +29,47 @@
 ypos = 0;
 
 avail = true;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Applies this with each frame, possible waste of memory?
+// Optimize later
+// wow josh lack of optimization in game maker for a school project
+
+
+if (global.menu_id == 1) {
+global.menu_len = 3;
+if (global.menu_choice == 0) {x = obj_newgame.x; y = obj_newgame.y}
+if (global.menu_choice == 1) {x = obj_options.x; y = obj_options.y}
+if (global.menu_choice == 2) {x = obj_tutorial.x; y = obj_tutorial.y}
+if (global.menu_choice == 3) {x = obj_quit.x; y = obj_quit.y}
+}
+
+if (global.menu_id == 2) {
+global.menu_len = 1;
+if (global.menu_choice == 0) {x = obj_sound.x; y = obj_sound.y}
+if (global.menu_choice == 1) {x = obj_return.x; y = obj_return.y}
+}
 </string>
           </argument>
         </arguments>
@@ -54,7 +95,6 @@ avail = true;
             <string>audio_play_sound(snd_Title_click, 9, false);
 if (global.menu_choice != global.menu_len) {
 global.menu_choice += 1;
-y += 59;
 }
 </string>
           </argument>
@@ -81,7 +121,6 @@ y += 59;
             <string>audio_play_sound(snd_Title_click, 9, false);
 if (global.menu_choice != 0) {
 global.menu_choice -= 1;
-y -= 59;
 }
 </string>
           </argument>
