@@ -100,6 +100,9 @@
       <sprite>sprites\spr_newgame</sprite>
       <sprite>sprites\spr_quit</sprite>
       <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_soundT</sprite>
+      <sprite>sprites\spr_Vol</sprite>
+      <sprite>sprites\spr_back</sprite>
     </sprites>
     <sprite>sprites\spr_skillSelect</sprite>
   </sprites>
@@ -184,6 +187,9 @@
       <object>objects\obj_tBox</object>
       <object>objects\to_Title</object>
       <object>objects\obj_tutorial</object>
+      <object>objects\obj_sound</object>
+      <object>objects\obj_Vol</object>
+      <object>objects\obj_return</object>
     </objects>
   </objects>
   <rooms name="rooms">
