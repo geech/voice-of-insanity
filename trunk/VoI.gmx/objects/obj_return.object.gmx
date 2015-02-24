@@ -26,22 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>if (global.menu_choice == 1) {
+global.menu_id = 1; // MAIN MENU
+
 audio_play_sound(snd_Title_select, 11, false);
 instance_activate_object(obj_options);
 instance_activate_object(obj_newgame);
 instance_activate_object(obj_tutorial);
 instance_activate_object(obj_quit);
 
-obj_tBox.x = obj_tBox.xpos;
-obj_tBox.y = obj_tBox.ypos;
-
 instance_deactivate_object(obj_sound);
 instance_deactivate_object(obj_Vol);
 instance_deactivate_object(obj_return);
 
 global.menu_choice = 1;
-global.menu_len = 3;
-
 }
 
 </string>

@@ -28,24 +28,21 @@
             <string>if (obj_tBox.avail == false) { exit; }
 if (global.menu_choice == 1) {
 audio_play_sound(snd_Title_select, 11, false);
+
+
+global.menu_id = 2; // OPTIONS MENU
+
+
 instance_deactivate_object(obj_options);
 instance_deactivate_object(obj_newgame);
 instance_deactivate_object(obj_tutorial);
 instance_deactivate_object(obj_quit);
 
-obj_tBox.xpos = obj_tBox.x;
-obj_tBox.ypos = obj_tBox.y;
-
 instance_activate_object(obj_sound);
 instance_activate_object(obj_Vol);
 instance_activate_object(obj_return);
 
-obj_tBox.x = obj_sound.x;
-obj_tBox.y = obj_sound.y;
-
 global.menu_choice = 0;
-global.menu_len = 1;
-
 }
 </string>
           </argument>
