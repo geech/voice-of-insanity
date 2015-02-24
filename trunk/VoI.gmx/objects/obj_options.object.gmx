@@ -40,6 +40,8 @@ instance_deactivate_object(obj_quit);
 instance_activate_object(obj_sound);
 instance_activate_object(obj_Vol);
 instance_activate_object(obj_return);
+//instance_activate_object(obj_MusicSound);
+//instance_activate_object(obj_musicVol);
 
 global.menu_choice = 0;
 }

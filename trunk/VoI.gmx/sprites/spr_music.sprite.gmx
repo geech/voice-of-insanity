@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>60</bbox_left>
-  <bbox_right>126</bbox_right>
+  <bbox_left>36</bbox_left>
+  <bbox_right>141</bbox_right>
   <bbox_top>17</bbox_top>
   <bbox_bottom>40</bbox_bottom>
   <HTile>0</HTile>
@@ -20,6 +20,6 @@
   <width>178</width>
   <height>60</height>
   <frames>
-    <frame index="0">images\spr_soundT_0.png</frame>
+    <frame index="0">images\spr_music_0.png</frame>
   </frames>
 </sprite>
