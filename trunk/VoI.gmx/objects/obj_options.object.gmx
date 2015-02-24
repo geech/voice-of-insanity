@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>if (obj_tBox.avail == false) { exit; }
 if (global.menu_choice == 1) {
-audio_play_sound(snd_Title_select, 11, false);
 
 
 global.menu_id = 2; // OPTIONS MENU
