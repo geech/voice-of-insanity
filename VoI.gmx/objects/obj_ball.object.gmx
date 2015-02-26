@@ -288,8 +288,9 @@ clock = mclock;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (comeback = true){
-obj_player.direction = direction;
+            <string>
+if (comeback = true){
+obj_player.direction = -direction;
 obj_player.speed -= 4;
 }
 </string>

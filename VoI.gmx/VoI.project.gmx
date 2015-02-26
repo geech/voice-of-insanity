@@ -167,6 +167,7 @@
       <object>objects\obj_shieldHP</object>
       <object>objects\obj_ballHP</object>
       <object>objects\powerMenu_skill</object>
+      <object>objects\pMenu</object>
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>
