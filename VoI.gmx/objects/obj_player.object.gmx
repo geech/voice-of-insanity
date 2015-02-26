@@ -66,20 +66,31 @@ maxhp = health;
  
 powerNM[0] = "";
 current_power[0] = spr_power0;
+skill_cd[0] = true; // forever true
+
 
 powerNM[1] = "Pullback";
 current_power[1] = spr_power2;
+skill_cd[1] = false;
+cd_clock[1] = 0;
+max_cd[1] = 90;
 
 powerNM[2] = "Pull to";
 current_power[2] = spr_power1;
+skill_cd[2] = false;
+cd_clock[2] = 0;
+max_cd[2] = 210;
 
 powerNM[3] = "Hold";
 current_power[3] = spr_power3;
+skill_cd[3] = false;
+cd_clock[3] = 0;
+max_cd[3] = 450;
 
    // &gt;&gt; Basic cooldown
-skill_cd = false;
-max_cd = 330;
-cd_clock = max_cd;
+//skill_cd = false;
+//max_cd = 330;
+//cd_clock = max_cd;
 
 
 // &gt;&gt; Default: No skill
@@ -188,7 +199,6 @@ else
     }
 }
 
-if (skill_cd == false) {
 if (keyboard_check(ord("0"))) {
 current_skill = 0;
 }
@@ -207,7 +217,7 @@ else if (keyboard_check(ord("3"))) {
 current_skill = 3;
 powerMenu_skill.y = powerMenu2.y-2;
 }
-}
+
 
 if (current_skill != 0) {
 instance_activate_object(powerMenu_skill)
@@ -261,11 +271,13 @@ instance_deactivate_all(false);
           <argument>
             <kind>1</kind>
             <string>
-if (skill_cd == true) {
-    cd_clock -= 1
+for (a = 1; a &lt; 3; a++) {
 
-    if (cd_clock &lt;= 0) {
-        skill_cd = false;
+if (skill_cd[a] == true) {
+    cd_clock[a] -= 1
+
+    if (cd_clock[a] &lt;= 0) {
+        skill_cd[a] = false;
         if (current_skill == 1) { sk = powerMenu }
         if (current_skill == 2) { sk = powerMenu1 }
         if (current_skill == 3) { sk = powerMenu2 }
@@ -273,7 +285,7 @@ if (skill_cd == true) {
         effect_create_above(ef_ring, x-25, y, 1, c_aqua);
         }
     }
-
+}
 }
 </string>
           </argument>
@@ -657,9 +669,9 @@ audio_play_sound(snd_playerDam3, 9, false)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (skill_cd = false) {
- // Set counter to 0, works in reverse
+            <string> // Set counter to 0, works in reverse
 
+if !skill_cd[current_skill] {
 
 if (current_skill == 0){
 show_debug_message("No skill!");
@@ -674,8 +686,9 @@ exit;
 
 // ID: 1 -&gt; Pull back
 if (current_skill == 1) {
+
 obj_ballHP.color = c_green;
-max_cd = 90; // 3 Seconds
+//max_cd = 90; // 3 Seconds
 with(obj_ball){
 scome = false;
 comeback = true;
@@ -685,7 +698,7 @@ obj_ballHP.color = c_white;
 }
 
 else if (current_skill == 2) {
-max_cd = 210;
+//max_cd = 210;
 tempx = x;
 tempy =y;
 x = obj_ball.x;
@@ -695,14 +708,14 @@ obj_ball.y = tempy;
 }
 
 else if (current_skill == 3) {
-max_cd = 450; // 12 Seconds
+//max_cd = 450; // 12 Seconds
 move_Ball = true;
 move_Ball_time += 100;
 obj_ballHP.color = c_yellow;
 }
 
-cd_clock = max_cd;
-skill_cd = true;
+cd_clock[current_skill] = max_cd[current_skill];
+skill_cd[current_skill] = true;
 
 
 // End SKill

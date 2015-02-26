@@ -27,9 +27,12 @@
             <kind>1</kind>
             <string>image_index = spr_power0;
 skill_image = spr_power0;
+
+cooldown = 
 skillID = 0;
 tilt = true;
 angle = 0;
+
 </string>
           </argument>
         </arguments>
@@ -57,12 +60,12 @@ image_index = skill_image;
     if tilt {
       angle += 1;
       image_angle += .5;
-      if angle &gt;= 15 { tilt = false; }
+      if angle &gt;= 10 { tilt = false; }
     }
     else if !tilt {
         angle -= 1;
         image_angle -= .5;
-        if angle &lt;= -15 { tilt = true; }
+        if angle &lt;= -10 { tilt = true; }
     }
 }
 

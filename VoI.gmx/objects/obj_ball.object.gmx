@@ -313,9 +313,9 @@ obj_player.speed = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if !audio_is_playing(snd_ballHit1){
+            <string>if !audio_is_playing(snd_ballHit1){
 audio_play_sound(snd_ballHit1, 9, false);
-//}
+}
 </string>
           </argument>
         </arguments>
@@ -362,7 +362,8 @@ audio_play_sound(snd_ballHit1, 9, false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_ballHit3, 9, false);
+            <string>if !audio_is_playing(snd_ballHit3) {
+audio_play_sound(snd_ballHit3, 9, false); }
 </string>
           </argument>
         </arguments>

@@ -83,7 +83,8 @@ if (y &lt; yy - 3) { mu = true; }
             <kind>1</kind>
             <string>mh = health/global.maxhp
 
-if (obj_player.skill_cd == false) {
+for (a = 1; a &lt; 3; a++) {
+if (obj_player.skill_cd[a] == false) {
 if (mh &gt; .80){
 sprite_index = spr_ball;
 obj_ball.sprite_index = spr_ball;
@@ -103,6 +104,7 @@ obj_ball.sprite_index = spr_ball_orange;
 if (mh &lt; .2) {
 sprite_index = spr_ball_red;
 obj_ball.sprite_index = spr_ball_red;
+}
 }
 }
 

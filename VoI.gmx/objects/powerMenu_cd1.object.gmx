@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_player.skill_cd == true){
-draw_set_alpha(obj_player.cd_clock/obj_player.max_cd);
+            <string>if (obj_player.skill_cd[2] == true){
+draw_set_alpha(obj_player.cd_clock[2]/obj_player.max_cd[2]);
 }
-if (obj_player.skill_cd == false) {
+if (obj_player.skill_cd[2] == false) {
 draw_set_alpha(0)
 }
 draw_sprite(spr_power0, -1, x, y);
