@@ -134,7 +134,9 @@ delay += set_delay;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_ballHit4, 9, false);
+            <string>if (obj_tBox.avail == false) { exit; }
+if (global.menu_choice == 0 and global.menu_id == 2 ) {
+audio_play_sound(snd_ballHit4, 9, false);}
 </string>
           </argument>
         </arguments>
