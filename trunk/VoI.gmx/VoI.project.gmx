@@ -173,6 +173,7 @@
       <object>objects\obj_ballHP</object>
       <object>objects\powerMenu_skill</object>
       <object>objects\pMenu</object>
+      <object>objects\pause_bg</object>
     </objects>
     <object>objects\obj_pressureP</object>
     <object>objects\obj_soulConnect</object>
@@ -199,8 +200,6 @@
       <object>objects\obj_return</object>
       <object>objects\this_plays_the_music</object>
     </objects>
-    <object>objects\object62</object>
-    <object>objects\obj_tutorialH</object>
     <object>objects\obj_resume</object>
     <object>objects\obj_quit2</object>
     <object>objects\obj_restart</object>
