@@ -109,6 +109,10 @@
       <sprite>sprites\spr_master</sprite>
     </sprites>
     <sprite>sprites\spr_skillSelect</sprite>
+    <sprite>sprites\spr_tutorialH</sprite>
+    <sprite>sprites\spr_resume</sprite>
+    <sprite>sprites\spr_quit2</sprite>
+    <sprite>sprites\spr_restart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\title_background</background>
@@ -157,6 +161,7 @@
       <object>objects\testboxGUI</object>
       <object>objects\roomName</object>
       <object>objects\obj_pause_Ctrl</object>
+      <object>objects\obj_pause</object>
       <object>objects\globalHandler</object>
       <object>objects\powerMenu</object>
       <object>objects\powerMenu1</object>
@@ -194,6 +199,11 @@
       <object>objects\obj_return</object>
       <object>objects\this_plays_the_music</object>
     </objects>
+    <object>objects\object62</object>
+    <object>objects\obj_tutorialH</object>
+    <object>objects\obj_resume</object>
+    <object>objects\obj_quit2</object>
+    <object>objects\obj_restart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>

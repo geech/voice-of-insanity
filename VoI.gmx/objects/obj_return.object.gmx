@@ -34,6 +34,7 @@ instance_activate_object(obj_newgame);
 instance_activate_object(obj_tutorial);
 instance_activate_object(obj_quit);
 
+
 instance_deactivate_object(obj_sound);
 instance_deactivate_object(obj_Vol);
 instance_deactivate_object(obj_return);
@@ -43,6 +44,22 @@ instance_deactivate_object(obj_return);
 global.menu_choice = 1;
 }
 
+if (global.menu_choice == 3) {
+global.menu_id = 3; // MAIN MENU
+
+audio_play_sound(snd_Title_select, 11, false);
+instance_activate_object(obj_options);
+instance_activate_object(obj_newgame);
+instance_activate_object(obj_tutorial);
+instance_activate_object(obj_quit);
+
+
+instance_deactivate_object(obj_tutorialH);
+instance_deactivate_object(obj_return);
+
+
+global.menu_choice = 2;
+}
 </string>
           </argument>
         </arguments>
