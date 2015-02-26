@@ -725,6 +725,7 @@ x = obj_ball.x;
 y = obj_ball.y;
 obj_ball.x = tempx;
 obj_ball.y = tempy;
+image_angle -= 180;
 }
 
 else if (current_skill == 3) {
