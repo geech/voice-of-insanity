@@ -416,7 +416,7 @@ effect_create_above(ef_spark, obj_player.x, obj_player.y, 2, c_white);
         <arguments>
           <argument>
             <kind>4</kind>
-            <string>1</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>4</kind>
