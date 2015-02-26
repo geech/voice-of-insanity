@@ -117,6 +117,7 @@
   <backgrounds name="background">
     <background>background\title_background</background>
     <background>background\GameOver_sample</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
