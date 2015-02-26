@@ -27,9 +27,18 @@
             <kind>1</kind>
             <string>screen_save("gamescreen.png");
 instance_deactivate_all(true);
+instance_create(1024, 896, pause_bg)
 background = sprite_add("gamescreen.png", 0, false, true,  1024, 768);
+pause_bg.sprite_index = background;
 
-interest = "resume";
+
+if !instance_exists(obj_resume) { instance_create(512, 289, obj_resume); }
+if !instance_exists(obj_restart) { instance_create(512, 389, obj_restart); }
+if !instance_exists(obj_quit2) { instance_create(512, 489, obj_quit2); }
+
+// Much easier 
+instance_create(x, y, obj_tBox)
+global.menu_id = 4;
 </string>
           </argument>
         </arguments>
@@ -70,44 +79,13 @@ interest = "resume";
 {
     file_delete("gamescreen.png");
 }
+with(obj_tBox) {instance_destroy();}
+with(obj_resume){ instance_destroy();}
+with(obj_restart) { instance_destroy(); }
+with(obj_quit2) { instance_destroy(); }
+with(pause_bg) { instance_destroy();}
 
 instance_activate_all();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (interest == "resume")
-{
-   
-    draw_sprite(spr_box, 15, 512, 389-100);
-    
-}
-else if( interest == "restart")
-{
-    draw_sprite(spr_box, 15, 512, 389);
-}
-else if (interest == "exit")
-{
-   draw_sprite(spr_box, 15, 512, 389+100);
-}
 </string>
           </argument>
         </arguments>
@@ -158,99 +136,8 @@ else if (interest == "exit")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(background, 0, 1024, 768);
-draw_sprite(spr_resume, 0, 512, 389-100);
-draw_sprite(spr_restart, 0, 512, 389);
-draw_sprite(spr_quit2, 0, 512, 389+100);
+            <string>//draw_sprite(background, -1, 1024, 768);
 
-
-if (interest == "resume")
-{
-    draw_sprite(spr_box, 1-29, 512, 389-100);
-}
-if (interest == "restart")
-{
-    draw_sprite(spr_box, 1-29, 512, 389);
-}
-if (interest == "exit")
-{
-    draw_sprite(spr_box, 1-29, 512, 389+100);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="40">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (interest == "resume")
-{
-    draw_sprite(spr_box, 15, 512, 389-100);
-    interest = "restart";
-}
-else if (interest == "restart")
-{
-    draw_sprite(spr_box, 15, 512, 389);
-    interest = "exit";
-}
-else if (interest == "exit")
-{
-    draw_sprite(spr_box, 15, 512, 389);
-    interest = "resume";
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="38">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (interest == "resume")
-{
-
-    draw_sprite(spr_box, 15, 512, 389-100);
-    interest = "exit";
-}
-else if (interest == "restart")
-{
-    draw_sprite(spr_box, 15, 512, 389);
-    interest = "resume";
-}
-else if (interest == "exit")
-{
-    draw_sprite(spr_box, 15, 512, 389+100);
-    interest = "restart";
-}
 </string>
           </argument>
         </arguments>
@@ -296,34 +183,7 @@ else if (interest == "exit")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (interest == "resume")
-{
-   
-    instance_destroy ();
-    
-}
-else if( interest == "restart")
-{
-    if (file_exists("gamescreen.png"))
-    {
-        file_delete("gamescreen.png");
-    }
-    sound_stop_all();
-    room_restart();
-}
-else if (interest == "exit")
-{
-    if (file_exists("gamescreen.png"))
-    {
-        file_delete("gamescreen.png");
-    }
-    sound_stop_all();
-    room_goto(0);
-}
-
-
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

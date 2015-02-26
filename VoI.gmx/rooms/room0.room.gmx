@@ -456,7 +456,6 @@ global.roomNM = "Room 1";</code>
     <instance objName="obj_floor" x="1376" y="2688" name="inst_9C1E918D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="384" y="1280" name="inst_CFB6CFF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="1664" y="2784" name="inst_944608CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="96" y="3968" name="inst_019FFDD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="800" y="1408" name="inst_1E66D526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="736" name="inst_057ACA7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="1920" y="2784" name="inst_4A9E27C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

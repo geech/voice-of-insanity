@@ -74,6 +74,7 @@ global.menu_len = 0;
 if (global.menu_choice == 0) {x = obj_return.x; y = obj_return.y}
 }
 
+// PAUSE MENU
 if (global.menu_id == 4) {
 global.menu_len = 2;
 if (global.menu_choice == 0) {x = obj_resume.x; y = obj_resume.y}
