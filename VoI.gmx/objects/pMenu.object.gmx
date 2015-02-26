@@ -55,7 +55,13 @@ angle = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (current_skill == skillID) {
+            <string>if (obj_player.skill_cd[skillID]) {
+image_index = skill_image;
+image_angle = 0;
+angle = 0;
+exit;
+}
+if (current_skill == skillID) {
 image_index = skill_image;
     if tilt {
       angle += 1;
@@ -75,8 +81,9 @@ else
 tilt = true;
 angle = 0;
 image_angle = 0;
-image_index = spr_power0;
+image_index = skill_image;
 }
+
 </string>
           </argument>
         </arguments>

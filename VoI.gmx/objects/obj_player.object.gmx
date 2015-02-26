@@ -271,22 +271,42 @@ instance_deactivate_all(false);
           <argument>
             <kind>1</kind>
             <string>
-for (a = 1; a &lt; 3; a++) {
+if (skill_cd[1] == true) {
+    cd_clock[1] -= 1
 
-if (skill_cd[a] == true) {
-    cd_clock[a] -= 1
-
-    if (cd_clock[a] &lt;= 0) {
-        skill_cd[a] = false;
-        if (current_skill == 1) { sk = powerMenu }
-        if (current_skill == 2) { sk = powerMenu1 }
-        if (current_skill == 3) { sk = powerMenu2 }
-        with(sk){
+    if (cd_clock[1] &lt;= 0) {
+        skill_cd[1] = false;
+        with(powerMenu){
         effect_create_above(ef_ring, x-25, y, 1, c_aqua);
         }
     }
 }
+
+
+if (skill_cd[2] == true) {
+    cd_clock[2] -= 1
+
+    if (cd_clock[2] &lt;= 0) {
+        skill_cd[2] = false;
+        with(powerMenu1){
+        effect_create_above(ef_ring, x-25, y, 1, c_aqua);
+        }
+    }
 }
+
+
+if (skill_cd[3] == true) {
+    cd_clock[3] -= 1
+
+    if (cd_clock[3] &lt;= 0) {
+        skill_cd[3] = false;
+        with(powerMenu2){
+        effect_create_above(ef_ring, x-25, y, 1, c_aqua);
+        }
+    }
+}
+
+
 </string>
           </argument>
         </arguments>
