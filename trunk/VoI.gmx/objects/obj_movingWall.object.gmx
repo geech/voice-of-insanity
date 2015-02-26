@@ -651,7 +651,7 @@
         <exetype>1</exetype>
         <functionname>action_if_variable</functionname>
         <codestring></codestring>
-        <whoName>obj_soundCtrl</whoName>
+        <whoName>&lt;undefined&gt;</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
