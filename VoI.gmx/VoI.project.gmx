@@ -28,6 +28,7 @@
     <sound>sound\snd_Title</sound>
     <sound>sound\snd_Title_click</sound>
     <sound>sound\snd_Title_select</sound>
+    <sound>sound\snd_Title_wind</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Shield">
@@ -143,7 +144,6 @@
     <object>objects\obj_shield</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_sOff1</object>
-    <object>objects\obj_soundCtrl</object>
     <object>objects\obj_doorH</object>
     <object>objects\obj_doorV</object>
     <object>objects\obj_doorOpenV</object>
@@ -191,6 +191,7 @@
       <object>objects\obj_Vol</object>
       <object>objects\obj_musicVol</object>
       <object>objects\obj_return</object>
+      <object>objects\this_plays_the_music</object>
     </objects>
   </objects>
   <rooms name="rooms">

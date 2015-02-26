@@ -5,10 +5,10 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_wall</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_ball">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,11 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-// CHANNEL 9 = SWITCHES
-if !audio_is_playing(snd_ballHit2){
-audio_play_sound(snd_ballHit2, 9, false);
+            <string>if !audio_is_playing(snd_Title) and !audio_is_playing(snd_Title_wind) {
+audio_play_sound(snd_Title_wind, 10, true);
 }
 </string>
           </argument>
