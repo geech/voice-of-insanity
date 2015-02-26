@@ -68,6 +68,18 @@ if (global.menu_choice == 0) {x = obj_sound.x; y = obj_sound.y}
 //if (global.menu_choice == 1) {x = obj_MusicSound.x; y = obj_MusicSound.y}
 if (global.menu_choice == 1) {x = obj_return.x; y = obj_return.y}
 }
+
+if (global.menu_id == 3) {
+global.menu_len = 0;
+if (global.menu_choice == 0) {x = obj_return.x; y = obj_return.y}
+}
+
+if (global.menu_id == 4) {
+global.menu_len = 2;
+if (global.menu_choice == 0) {x = obj_resume.x; y = obj_resume.y}
+if (global.menu_choice == 1) {x = obj_restart.x; y = obj_restart.y}
+if (global.menu_choice == 2) {x = obj_quit2.x; y = obj_quit2.y}
+}
 </string>
           </argument>
         </arguments>
