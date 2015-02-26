@@ -37,7 +37,6 @@ instance_deactivate_object(obj_newgame);
 instance_deactivate_object(obj_tutorial);
 instance_deactivate_object(obj_quit);
 
-instance_activate_object(obj_tutorialH);
 instance_activate_object(obj_return);
 //instance_activate_object(obj_MusicSound);
 //instance_activate_object(obj_musicVol);

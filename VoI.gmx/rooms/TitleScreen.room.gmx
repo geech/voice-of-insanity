@@ -25,7 +25,7 @@ instance_create(1300+random(150), 120, obj_cloud1)
 instance_create(1300+random(150), 280, obj_cloud2)
 instance_create(1300+random(150), 480, obj_cloud3)
 audio_play_sound(snd_Title, 10, false);
-
+audio_play_sound(snd_Title_wind, 11, true);
 
 // Options menu
 instance_deactivate_object(obj_sound);

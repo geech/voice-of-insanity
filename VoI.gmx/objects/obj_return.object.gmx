@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.menu_choice == 1) {
+            <string>//if (obj_tBox.avail == false) { exit; }
+if (global.menu_choice == 1 and menu_id == 2) {
 global.menu_id = 1; // MAIN MENU
 
 audio_play_sound(snd_Title_select, 11, false);
@@ -44,8 +45,9 @@ instance_deactivate_object(obj_return);
 global.menu_choice = 1;
 }
 
-if (global.menu_choice == 3) {
-global.menu_id = 3; // MAIN MENU
+if (global.menu_choice == 0 and menu_id == 3) {
+//global.menu_id = 3; // MAIN MENU
+// that isnt the main menu you silly goose
 
 audio_play_sound(snd_Title_select, 11, false);
 instance_activate_object(obj_options);
@@ -53,11 +55,8 @@ instance_activate_object(obj_newgame);
 instance_activate_object(obj_tutorial);
 instance_activate_object(obj_quit);
 
-
-instance_deactivate_object(obj_tutorialH);
 instance_deactivate_object(obj_return);
-
-
+global.menu_id = 1; // this is the main menu
 global.menu_choice = 2;
 }
 </string>

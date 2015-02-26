@@ -53,6 +53,8 @@
 // Optimize later
 // wow josh lack of optimization in game maker for a school project
 
+//show_debug_message(fps_real);
+
 
 if (global.menu_id == 1) {
 global.menu_len = 3;
