@@ -135,23 +135,23 @@ if (image_angle &lt; 0) { image_angle += 360 }
 
 //show_debug_message(obj_shield.image_angle);
 // Base directions
-if (keyboard_check(ord("D"))) { direction = 0; }
-if (keyboard_check(ord("W")))  { direction = 90;}
-if (keyboard_check(ord("A"))) { direction = 180; }
-if (keyboard_check(ord("S"))) { direction = 270; }
+if (keyboard_check(global.movR)) { direction = 0; }
+if (keyboard_check(global.movU))  { direction = 90;}
+if (keyboard_check(global.movL)) { direction = 180; }
+if (keyboard_check(global.movD)) { direction = 270; }
 
 // 8 way changes
-if (keyboard_check(ord("W"))) and (keyboard_check(ord("D"))) { direction = 45;}
-if (keyboard_check(ord("W"))) and (keyboard_check(ord("A"))) { direction = 135;}
-if (keyboard_check(ord("S"))) and (keyboard_check(ord("A"))) { direction = 225; }
-if (keyboard_check(ord("S"))) and (keyboard_check(ord("D"))) { direction = 315; }
+if (keyboard_check(global.movU)) and (keyboard_check(global.movR)) { direction = 45;}
+if (keyboard_check(global.movU)) and (keyboard_check(global.movL)) { direction = 135;}
+if (keyboard_check(global.movD)) and (keyboard_check(global.movL)) { direction = 225; }
+if (keyboard_check(global.movD)) and (keyboard_check(global.movR)) { direction = 315; }
 
 if (keyboard_check(vk_nokey)) {
     sprite_index = spr_player_stand;
     obj_shield.sprite_index = spr_shield_stand;
 }
 
-if (keyboard_check(ord("W"))) or (keyboard_check(ord("A"))) or (keyboard_check(ord("S"))) or (keyboard_check(ord("D")))
+if (keyboard_check(global.movU)) or (keyboard_check(global.movL)) or (keyboard_check(global.movD)) or (keyboard_check(global.movR))
 {
     sprite_index = spr_player_walk;
     obj_shield.sprite_index = spr_shield_walk;
@@ -172,12 +172,12 @@ if
 
 }*/
 
-if (keyboard_check(ord("Q"))) or (keyboard_check(vk_left))
+if (keyboard_check(global.turnL)) or (keyboard_check(vk_left))
 {
 image_angle += rt_spd;
 }
 
-if (keyboard_check(ord("E"))) or (keyboard_check(vk_right))
+if (keyboard_check(global.turnR)) or (keyboard_check(vk_right))
 {
 image_angle -= rt_spd;
 }
@@ -219,9 +219,9 @@ powerMenu_skill.y = powerMenu2.y-2;
 }
 
 
-if (current_skill != 0) {
+/*if (current_skill != 0) {
 instance_activate_object(powerMenu_skill)
-}
+}*/
 </string>
           </argument>
         </arguments>
