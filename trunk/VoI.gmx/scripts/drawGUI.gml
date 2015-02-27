@@ -25,4 +25,4 @@ instance_create(97, pos_y+420, powerMenu_cd1);
 instance_create(97, pos_y+520, powerMenu2);
 instance_create(97, pos_y+520, powerMenu_cd2);
 
-instance_create(0, pos_y, globalHandler); 
+//instance_create(0, pos_y, globalHandler); 

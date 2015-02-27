@@ -28,9 +28,9 @@
             <string>
 
 // CHANNEL 9 = SWITCHES
-if !audio_is_playing(9){
-audio_play_sound(snd_ballHit2, 9, false);
-}
+//if !audio_is_playing(9){
+//audio_play_sound(snd_ballHit2, 9, false);
+//}
 </string>
           </argument>
         </arguments>

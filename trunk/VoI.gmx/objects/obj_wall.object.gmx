@@ -53,9 +53,9 @@ obj_player.check = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !audio_is_playing(snd_ballHit4) {
+            <string>//if !audio_is_playing(snd_ballHit4) {
 audio_play_sound(snd_ballHit4, 9, false);
-}
+//}
 </string>
           </argument>
         </arguments>

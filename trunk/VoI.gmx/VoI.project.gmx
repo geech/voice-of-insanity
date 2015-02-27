@@ -123,6 +123,7 @@
   </paths>
   <scripts name="scripts">
     <script>scripts\drawGUI.gml</script>
+    <script>scripts\playerControl.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_DD</font>
