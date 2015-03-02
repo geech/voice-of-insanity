@@ -207,8 +207,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
-    <room>rooms\room0</room>
     <room>rooms\Deaded</room>
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\Credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
