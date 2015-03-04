@@ -28,7 +28,7 @@
             <string>
 if (global.menu_choice == 0) {
 global.menu_id = 4;
-room_goto(1);
+room_goto(room0);
 audio_stop_all();
 }
 
