@@ -53,7 +53,7 @@ hits = global.wall_hp;
             <string>hits -= 1;
 
 if hits &lt;= 0 {
-instance_change(obj_nasties, true);
+instance_destroy();
 }
 </string>
           </argument>
