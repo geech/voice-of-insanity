@@ -538,11 +538,11 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_floorNasties" x="224" y="1120" name="inst_47400240" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="288" y="1120" name="inst_9217B40F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1952" y="832" name="inst_43810CA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="192" y="1152" name="inst_695352EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="1152" name="inst_4904E13A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="352" y="1152" name="inst_E9034CDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="384" y="1152" name="inst_7B6A4A56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="1152" name="inst_1B221391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1536" y="2720" name="inst_F6E3FE1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1568" y="2688" name="inst_F888C627" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grass" x="32" y="128" name="inst_18F061AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grass" x="32" y="64" name="inst_A3453272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grass" x="0" y="0" name="inst_02156AAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sOff1" x="192" y="1248" name="inst_E322088B" locked="0" code="a = (inst_24F3C8B4)&#xA;a.max_am += 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sOff1" x="416" y="1248" name="inst_49B32C2D" locked="0" code="a = (inst_24F3C8B4)&#xA;a.max_am += 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="448" y="1408" name="inst_CBCB5C97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -586,7 +586,7 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_wall" x="864" y="1024" name="inst_DB07ACA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="480" y="576" name="inst_D0FB3DA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1088" y="960" name="inst_282A3A36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="288" y="1152" name="inst_1107DA82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1536" y="2688" name="inst_63D1EEA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2048" y="1216" name="inst_3F131E9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1152" y="928" name="inst_A452F391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1120" y="928" name="inst_7A057707" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -595,7 +595,7 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_wall" x="1120" y="1024" name="inst_C42F99E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1312" y="960" name="inst_5172A0C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="960" y="992" name="inst_F19A4FAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="128" y="1152" name="inst_358AAC67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1600" y="2720" name="inst_77E2E526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="1248" y="96" name="inst_770D59A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="448" y="544" name="inst_1445E667" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1088" y="992" name="inst_8AA0B25B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -927,9 +927,9 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_floorNasties" x="1888" y="704" name="inst_55D6FE00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1728" y="1088" name="inst_842B9D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1728" y="1024" name="inst_27D9719E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="160" y="1152" name="inst_5C353797" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="256" y="1152" name="inst_F956AF2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="1152" name="inst_F3691C4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1568" y="2720" name="inst_A5C5EAA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1504" y="2688" name="inst_CB31D0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_floorNasties" x="1504" y="2720" name="inst_FD13FC92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="128" y="1088" name="inst_D172A721" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="64" y="1120" name="inst_330C68C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="512" y="1120" name="inst_DC76FB77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -8801,16 +8801,16 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_floorNasties" x="1600" y="2624" name="inst_504F18E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1600" y="2656" name="inst_BAE4A857" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floorNasties" x="1600" y="2688" name="inst_10CECE0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1600" y="2720" name="inst_77E2E526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1568" y="2720" name="inst_A5C5EAA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1536" y="2720" name="inst_F6E3FE1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1504" y="2720" name="inst_FD13FC92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1504" y="2688" name="inst_CB31D0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1536" y="2688" name="inst_63D1EEA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_floorNasties" x="1568" y="2688" name="inst_F888C627" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="32" y="128" name="inst_18F061AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="32" y="64" name="inst_A3453272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grass" x="0" y="0" name="inst_02156AAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="128" y="1152" name="inst_48966110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="160" y="1152" name="inst_4311FA06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="192" y="1152" name="inst_3EBCF79F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="224" y="1152" name="inst_5D610217" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="256" y="1152" name="inst_22BA9B4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="288" y="1152" name="inst_2BC29F5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="320" y="1152" name="inst_BA733571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="352" y="1152" name="inst_8FF7AB20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="384" y="1152" name="inst_7A5D19E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wallBreak" x="416" y="1152" name="inst_E964791D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
