@@ -152,7 +152,10 @@ global.maxhp = health;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_pause_Ctrl);
+            <string>
+if room != TitleScreen {
+instance_create(x, y, obj_pause_Ctrl);
+}
 </string>
           </argument>
         </arguments>
