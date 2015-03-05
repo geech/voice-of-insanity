@@ -30,6 +30,7 @@
     {
         file_delete("gamescreen.png");
     }
+    game_end()
     sound_stop_all();
     room_goto(0);
 }

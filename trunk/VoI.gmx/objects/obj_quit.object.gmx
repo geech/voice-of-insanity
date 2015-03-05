@@ -26,9 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>
+if (global.menu_id == 1) {
 if (global.menu_choice == 3) {
 game_end()
 }
+}
+
+if (global.menu_id == 4) { 
+if (global.menu_choice == 2) { game_end() } }
+
 
 if (global.menu_id == 5) {
     if (global.menu_choice == 1) {game_end()}

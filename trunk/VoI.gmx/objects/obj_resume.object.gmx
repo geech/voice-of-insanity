@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.menu_choice == 0) {   
+            <string>
+if (global.menu_id == 4) {
+if (global.menu_choice == 0) {   
 with(obj_resume){ instance_destroy();}
 with(obj_restart) { instance_destroy(); }
 with(obj_quit2) { instance_destroy(); }
@@ -33,6 +35,7 @@ with(pause_bg) { instance_destroy();}
 with(obj_pause_Ctrl) { instance_destroy(); }
 with(obj_tBox) {instance_destroy();}
 
+}
 }
 </string>
           </argument>
