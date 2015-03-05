@@ -83,6 +83,13 @@ if (global.menu_choice == 0) {x = obj_resume.x; y = obj_resume.y}
 if (global.menu_choice == 1) {x = obj_restart.x; y = obj_restart.y}
 if (global.menu_choice == 2) {x = obj_quit2.x; y = obj_quit2.y}
 }
+
+// GAME OVER MENU
+if (global.menu_id == 5) {
+global.menu_len = 1;
+if (global.menu_choice == 0) {x = obj_newgame.x; y = obj_newgame.y}
+if (global.menu_choice == 1) {x = obj_quit.x; y = obj_quit.y}
+}
 </string>
           </argument>
         </arguments>

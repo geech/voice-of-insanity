@@ -162,6 +162,7 @@
       <object>objects\testboxGUI</object>
       <object>objects\roomName</object>
       <object>objects\obj_pause_Ctrl</object>
+      <object>objects\obj_gameOver</object>
       <object>objects\obj_pause</object>
       <object>objects\globalHandler</object>
       <object>objects\powerMenu</object>
