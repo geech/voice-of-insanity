@@ -8916,7 +8916,7 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_wall" x="2112" y="1184" name="inst_333B92DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2144" y="1152" name="inst_F866C938" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2080" y="416" name="inst_699F991C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_health" x="2048" y="1120" name="inst_88775A02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="1984" y="1088" name="inst_22E16ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="2080" y="1120" name="inst_E916A325" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="2368" y="1376" name="inst_5138B151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="2464" y="448" name="inst_9947BFD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -10703,6 +10703,10 @@ audio_play_sound(floor1Song, 10, true);}</code>
     <instance objName="obj_grass" x="704" y="2688" name="inst_05DFC601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="672" y="2688" name="inst_1C039F56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass" x="672" y="2656" name="inst_78B1D485" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="320" y="864" name="inst_A69FE612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="576" y="960" name="inst_3F32052F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="1376" y="1120" name="inst_EBD58B64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_health" x="1568" y="2496" name="inst_692B5C99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
