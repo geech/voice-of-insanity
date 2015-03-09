@@ -41,6 +41,9 @@ globalvar floor_dmg;
 globalvar broken_wall_dmg;
 globalvar wall_hp;
 
+// Player's power up
+globalvar health_reg;
+
 // Ball Properties
 globalvar ball_spd;
 globalvar ball_dist;
@@ -68,6 +71,9 @@ global.ball_to_player_dmg = 1;
 global.floor_dmg = .5;
 global.broken_wall_dmg = 1;
 global.wall_hp = 1;
+
+// Power up effects
+global.health_reg = 3;
 
 // &gt;&gt; Controls
 

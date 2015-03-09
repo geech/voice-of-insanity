@@ -163,6 +163,7 @@
       <object>objects\roomName</object>
       <object>objects\obj_pause_Ctrl</object>
       <object>objects\obj_gameOver</object>
+      <object>objects\obj_minimap</object>
       <object>objects\obj_pause</object>
       <object>objects\globalHandler</object>
       <object>objects\powerMenu</object>
@@ -205,6 +206,7 @@
     <object>objects\obj_resume</object>
     <object>objects\obj_quit2</object>
     <object>objects\obj_restart</object>
+    <object>objects\obj_health</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
