@@ -29,6 +29,7 @@
     <sound>sound\snd_Title_click</sound>
     <sound>sound\snd_Title_select</sound>
     <sound>sound\snd_Title_wind</sound>
+    <sound>sound\snd_steps</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Shield">
@@ -67,6 +68,7 @@
     <sprite>sprites\spr_ball_red</sprite>
     <sprite>sprites\spr_contr</sprite>
     <sprite>sprites\spr_floorNasties</sprite>
+    <sprite>sprites\spr_acid</sprite>
     <sprite>sprites\boxGUI</sprite>
     <sprite>sprites\spr_crate</sprite>
     <sprite>sprites\spr_sound</sprite>
@@ -86,6 +88,8 @@
     </sprites>
     <sprites name="floor">
       <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_stairsR</sprite>
+      <sprite>sprites\spr_stairsL</sprite>
       <sprite>sprites\spr_lf_u0</sprite>
       <sprite>sprites\spr_lf_d</sprite>
       <sprite>sprites\spr_lf_l</sprite>
@@ -113,6 +117,9 @@
     <sprite>sprites\spr_resume</sprite>
     <sprite>sprites\spr_quit2</sprite>
     <sprite>sprites\spr_restart</sprite>
+    <sprite>sprites\spr_credits1</sprite>
+    <sprite>sprites\spri_credits2</sprite>
+    <sprite>sprites\spr_stairsRun</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\title_background</background>
@@ -127,6 +134,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_DD</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -181,7 +189,9 @@
     <object>objects\obj_soulConnect</object>
     <objects name="Floor">
       <object>objects\obj_floor</object>
+      <object>objects\obj_stairsR</object>
       <object>objects\obj_lf_u</object>
+      <object>objects\obj_stairsL</object>
       <object>objects\obj_lf_d</object>
       <object>objects\obj_grass</object>
     </objects>
@@ -206,11 +216,17 @@
     <object>objects\obj_quit2</object>
     <object>objects\obj_restart</object>
     <object>objects\obj_health</object>
+    <object>objects\obj_acid</object>
+    <object>objects\obj_credits1</object>
+    <object>objects\ob_credits2</object>
+    <object>objects\obj_stairsRun</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TitleScreen</room>
     <room>rooms\room0</room>
+    <room>rooms\Stairs</room>
     <room>rooms\room1</room>
+    <room>rooms\Credits</room>
     <room>rooms\Deaded</room>
   </rooms>
   <help>
