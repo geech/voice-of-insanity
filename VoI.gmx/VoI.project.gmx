@@ -120,6 +120,8 @@
     <sprite>sprites\spr_credits1</sprite>
     <sprite>sprites\spri_credits2</sprite>
     <sprite>sprites\spr_stairsRun</sprite>
+    <sprite>sprites\spr_BadIdea</sprite>
+    <sprite>sprites\spr_BadIdea_end</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\title_background</background>
@@ -220,8 +222,10 @@
     <object>objects\obj_credits1</object>
     <object>objects\ob_credits2</object>
     <object>objects\obj_stairsRun</object>
+    <object>objects\obj_Bad_Idea</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\BadIdea</room>
     <room>rooms\TitleScreen</room>
     <room>rooms\room0</room>
     <room>rooms\Stairs</room>
