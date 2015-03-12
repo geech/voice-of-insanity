@@ -57,6 +57,9 @@
 rt_spd = 5;
 immune = false;
 
+//Create position
+origin_x = obj_player.x;
+origin_y = obj_player.y;
 
 health = 10;
 maxhp = health;

@@ -122,6 +122,18 @@
     <sprite>sprites\spr_stairsRun</sprite>
     <sprite>sprites\spr_BadIdea</sprite>
     <sprite>sprites\spr_BadIdea_end</sprite>
+    <sprites name="Tutorial">
+      <sprite>sprites\tutorial_1</sprite>
+      <sprite>sprites\tutorial_2</sprite>
+      <sprite>sprites\tutorial3</sprite>
+      <sprite>sprites\tutorial4</sprite>
+      <sprite>sprites\tutorial5</sprite>
+      <sprite>sprites\tutorial6</sprite>
+      <sprite>sprites\tutorial7</sprite>
+      <sprite>sprites\tutorial8</sprite>
+      <sprite>sprites\tutorial9</sprite>
+      <sprite>sprites\tutorial10</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\title_background</background>
@@ -223,6 +235,7 @@
     <object>objects\ob_credits2</object>
     <object>objects\obj_stairsRun</object>
     <object>objects\obj_Bad_Idea</object>
+    <object>objects\obj_tutM</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\BadIdea</room>

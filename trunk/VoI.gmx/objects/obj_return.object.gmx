@@ -49,15 +49,17 @@ if (global.menu_choice == 0 and menu_id == 3) {
 //global.menu_id = 3; // MAIN MENU
 // that isnt the main menu you silly goose
 
+if(obj_tutM.slide &gt;10){
 audio_play_sound(snd_Title_select, 11, false);
 instance_activate_object(obj_options);
 instance_activate_object(obj_newgame);
 instance_activate_object(obj_tutorial);
 instance_activate_object(obj_quit);
 
+with(obj_tutM){instance_destroy()}
 instance_deactivate_object(obj_return);
 global.menu_id = 1; // this is the main menu
-global.menu_choice = 2;
+global.menu_choice = 2;}
 }
 </string>
           </argument>
