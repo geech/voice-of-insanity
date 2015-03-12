@@ -55,6 +55,7 @@
 
 //show_debug_message(fps_real);
 
+show_debug_message(global.menu_choice);
 
 if (global.menu_id == 1) {
 global.menu_len = 3;

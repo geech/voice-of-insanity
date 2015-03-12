@@ -51,7 +51,7 @@ time = 30*4; // 30*seconds
           <argument>
             <kind>1</kind>
             <string>time -= 1;
-if time &lt;= 0 { room_goto(TitleScreen); }
+if time &lt;= 0  or keyboard_check(vk_enter){ room_goto(TitleScreen); }
 </string>
           </argument>
         </arguments>
