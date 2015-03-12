@@ -26,8 +26,43 @@
           <argument>
             <kind>1</kind>
             <string>screen_save("gamescreen.png");
+
+or_playerx = obj_player.origin_x;
+or_playery = obj_player.origin_y;
+
+x_player = obj_player.x;
+y_player = obj_player.y;
+
+dif_x = x_player - or_playerx;
+dif_y = y_player - or_playery;
+
+flag = obj_player.moving_ball;
 instance_deactivate_all(true);
-instance_create(1024, 896, pause_bg)
+
+if(dif_x &lt;= 0 &amp;&amp; dif_y &lt;= 0)
+{
+    instance_create(1024, 896, pause_bg)
+    if !instance_exists(obj_resume) { instance_create(512, 289, obj_resume); }
+    if !instance_exists(obj_restart) { instance_create(512, 389, obj_restart); }
+    if !instance_exists(obj_quit2) { instance_create(512, 489, obj_quit2); }
+}
+
+
+else if ((dif_x &lt;= 0 )&amp;&amp; (dif_y &gt; 0))
+{
+    instance_create(1024, 896 + dif_y, pause_bg)
+    if !instance_exists(obj_resume) { instance_create(or_playerx, y_player - 100, obj_resume); }
+    if !instance_exists(obj_restart) { instance_create(or_playerx, y_player, obj_restart); }
+    if !instance_exists(obj_quit2) { instance_create(or_playerx, y_player + 100, obj_quit2); }   
+}
+else if ((dif_x &gt; 0 )&amp;&amp; (dif_y &gt; 0))
+{
+    instance_create(1024 + dif_x , 896 + dif_y, pause_bg);
+    if !instance_exists(obj_resume) { instance_create(x_player, y_player - 100, obj_resume); }
+    if !instance_exists(obj_restart) { instance_create(x_player, y_player, obj_restart); }
+    if !instance_exists(obj_quit2) { instance_create(x_player, y_player + 100, obj_quit2); } 
+}
+
 background = sprite_add("gamescreen.png", 0, false, true,  1024, 768);
 pause_bg.sprite_index = background;
 
